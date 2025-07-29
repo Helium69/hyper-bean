@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Product</title>
+  <link href="../../styles/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#4B1F0E] text-white font-sans min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-[#3A170C] shadow-md py-4 px-6">
+    <div class="relative flex items-center justify-center">
+        <!-- Left: Main Title (Hidden on small screens if needed) -->
+        <h1 class="absolute left-0 text-xl sm:text-2xl font-bold text-white">Coffee Admin</h1>
+
+        <!-- Center: Current Tab -->
+        <span class="text-lg sm:text-xl font-bold text-yellow-300">Home</span>
+    </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex flex-grow">
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-transition w-16 p-2 bg-[#2b1008] overflow-hidden">
+            <!-- Toggle Button (Top-left) -->
+            <div class="mb-6">
+                <button id="toggleBtn" class="bg-[#3E1A0F] px-3 py-2 rounded hover:bg-[#5A2A1C] transition text-lg font-bold">
+                ☰
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="space-y-2" id="sidebarLinks">
+                <a href="home.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">🏠 <span class="inline-block ml-2 hidden">Home</span></a>
+                <a href="view-products.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">☕ <span class="inline-block ml-2 hidden">View Products</span></a>
+                <a href="add-product.html" class="block px-4 py-2 rounded bg-[#3E1A0F] border-l-4 border-yellow-400 font-semibold shadow-md">➕ <span class="inline-block ml-2 hidden">Add Product</span></a>
+
+                <a href="view-users.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
+                👥 <span class="inline-block ml-2 hidden">View Users</span>
+                </a>
+                <a href="#" class="block px-4 py-2 rounded bg-[#8B1E1E] hover:bg-red-700 transition font-semibold">
+                🚪 <span class="inline-block ml-2 hidden">Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+
+        <!-- Main Content -->
+    <main class="flex-grow p-10">
+        <div class="max-w-xl mx-auto space-y-6">
+
+            <!-- Form Toggle Buttons -->
+            <div class="flex gap-4">
+            <button id="showCoffeeFormBtn" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded font-semibold text-black">
+                Add Coffee
+            </button>
+            <button id="showAddonFormBtn" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded font-semibold text-black">
+                Add Add-on
+            </button>
+            </div>
+
+            <!-- Coffee Form -->
+            <form id="coffeeForm" class="space-y-4">
+            <h2 class="text-xl font-bold">Coffee Details</h2>
+            <input type="text" placeholder="Coffee Name" class="w-full px-4 py-2 rounded text-black" />
+            <input type="number" placeholder="Small Price" class="w-full px-4 py-2 rounded text-black" />
+            <input type="number" placeholder="Medium Price" class="w-full px-4 py-2 rounded text-black" />
+            <input type="number" placeholder="Large Price" class="w-full px-4 py-2 rounded text-black" />
+            <input type="text" placeholder="Image URL" class="w-full px-4 py-2 rounded text-black" />
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white py-2 rounded">
+                Save Coffee
+            </button>
+            </form>
+
+            <!-- Add-on Form -->
+            <form id="addonForm" class="space-y-4 hidden">
+            <h2 class="text-xl font-bold">Add-on Details</h2>
+            <input type="text" placeholder="Add-on Name" class="w-full px-4 py-2 rounded text-black" />
+            <input type="number" placeholder="Price" class="w-full px-4 py-2 rounded text-black" />
+            <input type="text" placeholder="Image URL" class="w-full px-4 py-2 rounded text-black" />
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white py-2 rounded">
+                Save Add-on
+            </button>
+            </form>
+
+        </div>
+    </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#3A170C] text-sm text-center py-4">
+        <p>&copy; 2025 HyperBean Admin. All rights reserved.</p>
+    </footer>
+
+    <!-- Toggle Script -->
+    <script src="../../services/sidebar.js"> </script>
+    <script src="../../services/add-product-service.js"> </script>
+    
+
+
+</body>
+</html>

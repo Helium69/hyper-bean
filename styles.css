@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-transition {
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+@keyframes slide-in {
+    0% {
+    opacity: 0;
+    transform: translateX(100%);
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    from {
+    opacity: 1;
+    }
+    to {
+    opacity: 0;
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 0.3s ease-out forwards;
+}
+
+.animate-fade-out {
+    animation: fade-out 0.5s ease-out forwards;
+}
+
+
+  /* Apply only to scrollable area */
+    main::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    main::-webkit-scrollbar-track {
+        background: #3A170C; /* Track (background) */
+    }
+
+    main::-webkit-scrollbar-thumb {
+        background-color: #8B4513; /* Thumb */
+        border-radius: 6px;
+        border: 2px solid #3A170C; /* Optional border for spacing */
+    }
+
+    main::-webkit-scrollbar-thumb:hover {
+        background-color: #A0522D;
+    }
+
+    /* Firefox support */
+    main {
+        scrollbar-width: thin;
+        scrollbar-color: #8B4513 #3A170C;
+    }
