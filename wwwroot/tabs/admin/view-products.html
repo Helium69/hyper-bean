@@ -1,73 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View Products</title>
-    <link href="../../styles/output.css" rel="stylesheet">
-</head>
-<body class="bg-[#4B1F0E] text-white font-sans h-screen flex flex-col">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>View Products</title>
+        <link href="../../styles/output.css" rel="stylesheet">
+    </head>
+    <body class="bg-[#4B1F0E] text-white font-sans h-screen flex flex-col">
 
-    <!-- Header -->
-    <header class="bg-[#3A170C] shadow-md py-4 px-6">
-    <div class="relative flex items-center justify-center">
-        <!-- Left: Main Title (Hidden on small screens if needed) -->
-        <h1 class="absolute left-0 text-xl sm:text-2xl font-bold text-white">Coffee Admin</h1>
+        <!-- Header -->
+        <header class="bg-[#3A170C] shadow-md py-4 px-6">
+        <div class="relative flex items-center justify-center">
+            <!-- Left: Main Title (Hidden on small screens if needed) -->
+            <h1 class="absolute left-0 text-xl sm:text-2xl font-bold text-white">Coffee Admin</h1>
 
-        <!-- Center: Current Tab -->
-        <span class="text-lg sm:text-xl font-bold text-yellow-300">Home</span>
-    </div>
-    </header>
+            <!-- Center: Current Tab -->
+            <span class="text-lg sm:text-xl font-bold text-yellow-300">Home</span>
+        </div>
+        </header>
 
-    <!-- Main Layout -->
-    <div class="flex flex-grow h-0">
-        <!-- Sidebar -->
-        <aside id="sidebar" class="sidebar-transition w-16 p-2 bg-[#2b1008] overflow-hidden">
-            <!-- Toggle Button (Top-left) -->
-            <div class="mb-6">
-                <button id="toggleBtn" class="bg-[#3E1A0F] px-3 py-2 rounded hover:bg-[#5A2A1C] transition text-lg font-bold">
-                ☰
-                </button>
+        <!-- Main Layout -->
+        <div class="flex flex-grow h-0">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar-transition w-16 p-2 bg-[#2b1008] overflow-hidden">
+                <!-- Toggle Button (Top-left) -->
+                <div class="mb-6">
+                    <button id="toggleBtn" class="bg-[#3E1A0F] px-3 py-2 rounded hover:bg-[#5A2A1C] transition text-lg font-bold">
+                    ☰
+                    </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="space-y-2" id="sidebarLinks">
+                    <a href="home.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">🏠 <span class="inline-block ml-2 hidden">Home</span></a>
+                    <a href="view-products.html" class="block px-4 py-2 rounded bg-[#3E1A0F] border-l-4 border-yellow-400 font-semibold shadow-md">☕ <span class="inline-block ml-2 hidden">View Products</span></a>
+
+                    <a href="add-product.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
+                    ➕ <span class="inline-block ml-2 hidden">Add Product</span>
+                    </a>
+                    <a href="view-users.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
+                    👥 <span class="inline-block ml-2 hidden">View Users</span>
+                    </a>
+                    <a href="#" class="block px-4 py-2 rounded bg-[#8B1E1E] hover:bg-red-700 transition font-semibold">
+                    🚪 <span class="inline-block ml-2 hidden">Logout</span>
+                    </a>
+                </nav>
+            </aside>
+
+
+            <main class="flex-grow overflow-y-auto p-6">
+                <div class="mb-6 text-center">
+                    <h2 class="text-2xl font-bold text-yellow-300">Product Management</h2>
+                    <p class="text-sm text-gray-300 mb-4">Choose what to display and manage below.</p>
+                    <div class="flex justify-center gap-2">
+                        <button id="showCoffeesBtn" class="bg-[#3E1A0F] hover:bg-[#5A2A1C] px-4 py-2 rounded text-sm font-semibold">☕ Coffee</button>
+                        <button id="showAddonsBtn" class="bg-[#3E1A0F] hover:bg-[#5A2A1C] px-4 py-2 rounded text-sm font-semibold">🍫 Add-ons</button>
+                    </div>
+                </div>
+                <!--
+                <div class="mb-6 text-center">
+                    <h2 class="text-2xl font-bold text-yellow-300">Coffee Products</h2>
+                    <p class="text-sm text-gray-300">Manage your available coffee items below.</p>
+                </div>
+                -->
+                <div id="coffee-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Cards go here -->
+                </div>
+                <div id="addon-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 hidden">
+                <!-- Add-on Cards -->
+                </div>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-[#3A170C] text-sm text-center py-4">
+            <p>&copy; 2025 HyperBean Admin. All rights reserved.</p>
+        </footer>
+
+
+
+        <!-- Delete Modal -->
+        <div id="deleteModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-[#2b1008] p-6 rounded shadow-lg max-w-sm w-full text-white">
+            <h3 class="text-lg font-bold mb-2">Delete Coffee</h3>
+            <p class="text-sm mb-4">Are you sure you want to delete <span id="deleteCoffeeName" class="font-semibold text-yellow-300">this item</span>?</p>
+            <div class="flex justify-end gap-2">
+            <button id="cancelDeleteBtn" class="px-3 py-1 bg-gray-600 hover:bg-gray-500 rounded text-sm">Cancel</button>
+            <button id="confirmDeleteBtn" class="px-3 py-1 bg-red-600 hover:bg-red-500 rounded text-sm">Delete</button>
             </div>
+        </div>
+        </div>
 
-            <!-- Navigation -->
-            <nav class="space-y-2" id="sidebarLinks">
-                <a href="home.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">🏠 <span class="inline-block ml-2 hidden">Home</span></a>
-                <a href="view-products.html" class="block px-4 py-2 rounded bg-[#3E1A0F] border-l-4 border-yellow-400 font-semibold shadow-md">☕ <span class="inline-block ml-2 hidden">View Products</span></a>
-
-                <a href="add-product.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
-                ➕ <span class="inline-block ml-2 hidden">Add Product</span>
-                </a>
-                <a href="view-users.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
-                👥 <span class="inline-block ml-2 hidden">View Users</span>
-                </a>
-                <a href="#" class="block px-4 py-2 rounded bg-[#8B1E1E] hover:bg-red-700 transition font-semibold">
-                🚪 <span class="inline-block ml-2 hidden">Logout</span>
-                </a>
-            </nav>
-        </aside>
-
-
-        <main class="flex-grow overflow-y-auto p-6">
-            <div class="mb-6 text-center">
-                <h2 class="text-2xl font-bold text-yellow-300">Coffee Products</h2>
-                <p class="text-sm text-gray-300">Manage your available coffee items below.</p>
+        <!-- Update Modal -->
+        <div id="updateModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-[#2b1008] p-6 rounded shadow-lg max-w-md w-full text-white">
+            <h3 class="text-lg font-bold mb-4">Update Coffee</h3>
+            <form id="updateForm" class="space-y-3">
+            <input type="text" id="updateName" class="w-full p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Coffee Name" />
+            <div class="grid grid-cols-3 gap-2">
+                <input type="number" id="updateSmall" class="p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Small Price" />
+                <input type="number" id="updateMedium" class="p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Medium Price" />
+                <input type="number" id="updateLarge" class="p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Large Price" />
             </div>
-            <div id="coffee-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Cards go here -->
+            <input type="text" id="updateImage" class="w-full p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Image URL" />
+            <div class="flex justify-end gap-2">
+                <button type="button" id="cancelUpdateBtn" class="px-3 py-1 bg-gray-600 hover:bg-gray-500 rounded text-sm">Cancel</button>
+                <button type="submit" class="px-3 py-1 bg-green-600 hover:bg-green-500 rounded text-sm">Save</button>
             </div>
-        </main>
+            </form>
+        </div>
+        </div>
 
-    </div>
+        <!-- Delete Add-on Modal -->
+        <div id="deleteAddonModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-[#2b1008] p-6 rounded shadow-lg max-w-sm w-full text-white">
+            <h3 class="text-lg font-bold mb-2">Delete Add-on</h3>
+            <p class="text-sm mb-4">Are you sure you want to delete <span id="deleteAddonName" class="font-semibold text-yellow-300">this item</span>?</p>
+            <div class="flex justify-end gap-2">
+            <button id="cancelDeleteAddonBtn" class="px-3 py-1 bg-gray-600 hover:bg-gray-500 rounded text-sm">Cancel</button>
+            <button id="confirmDeleteAddonBtn" class="px-3 py-1 bg-red-600 hover:bg-red-500 rounded text-sm">Delete</button>
+            </div>
+        </div>
+        </div>
 
-    <!-- Footer -->
-    <footer class="bg-[#3A170C] text-sm text-center py-4">
-        <p>&copy; 2025 HyperBean Admin. All rights reserved.</p>
-    </footer>
 
-    <!-- Toggle Script -->
-    <script src="../../services/sidebar.js"> </script>
+        <!-- Update Add-on Modal -->
+        <div id="updateAddonModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-[#2b1008] p-6 rounded shadow-lg max-w-sm w-full text-white">
+            <h3 class="text-lg font-bold mb-4">Update Add-on</h3>
+            <form id="updateAddonForm" class="space-y-3">
+            <input type="text" id="updateAddonName" class="w-full p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Add-on Name" />
+            <input type="number" id="updateAddonPrice" class="w-full p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Price" />
+            <input type="text" id="updateAddonImage" class="w-full p-2 bg-[#3E1A0F] rounded text-sm" placeholder="Image URL" />
+            <div class="flex justify-end gap-2">
+                <button type="button" id="cancelUpdateAddonBtn" class="px-3 py-1 bg-gray-600 hover:bg-gray-500 rounded text-sm">Cancel</button>
+                <button type="submit" class="px-3 py-1 bg-green-600 hover:bg-green-500 rounded text-sm">Save</button>
+            </div>
+            </form>
+        </div>
+        </div>
 
-    <script src="../../services/view-product-service.js"> </script>
-</body>
+
+            <!-- Toggle Script -->
+        <script src="../../services/sidebar.js"> </script>
+
+        <script src="../../services/main-services/view-product-service.js"> </script>
+
+    </body>
 </html>
