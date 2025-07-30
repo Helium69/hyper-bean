@@ -46,7 +46,6 @@ C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\bx3cb531uw-f4e4
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\wnfbbwjyo5-qzu4riheqo.gz
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\m3icshtodm-etakcxlt3x.gz
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\qbcqnqm36l-r5tcdzf86z.gz
-C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\m42i25sdvg-z8xq4aojkb.gz
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\czk19hryq7-v432q74r6d.gz
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\l8tt4myebh-cb4yixodmm.gz
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\9ap98dfjml-t55gyzbi5s.gz
@@ -66,3 +65,6 @@ C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\refint\HyperBean.dll
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\HyperBean.pdb
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\HyperBean.genruntimeconfig.cache
 C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\ref\HyperBean.dll
+C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\m42i25sdvg-tc2vym6qoy.gz
+C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\i48xtobr4z-hzpeqg677d.gz
+C:\Users\johnc\WebProjects\HyperBean\obj\Debug\net9.0\compressed\tusfqayz2x-p5ppk2tmdt.gz

@@ -13,6 +13,10 @@ document.getElementById("admin-signin").addEventListener("submit", async (e) => 
             password : password
         })})
 
-    const data = response.json();
+    const data = await response.json();
+
+    console.log(data);
+
+    debugger;
     
 });

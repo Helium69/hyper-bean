@@ -10,18 +10,9 @@ namespace HyperBean.Helpers.AdminHelpers
             Admin? user;
             ResponseAPI<string> response = new ResponseAPI<string>();
 
-
             try
             {
                 user = await context.Request.ReadFromJsonAsync<Admin>();
-
-                if (user is null)
-                {
-                    Console.WriteLine("[DEBUG - AdminEndpoint] - Data might be corrupted");
-
-                    response.Message = "Data convertion failed, data might be corrupted";
-                    return Results.Json(response, statusCode: 400);
-                }
             }
             catch (Exception)
             {
@@ -31,21 +22,30 @@ namespace HyperBean.Helpers.AdminHelpers
                 return Results.Json(response, statusCode: 400);
             }
 
-            if (user.ErrorList()!.Count() != 0)
+            if (user is null)
+            {
+                Console.WriteLine("[DEBUG - AdminEndpoint] - Data might be corrupted");
+
+                response.Message = "Data convertion failed, data might be corrupted";
+                return Results.Json(response, statusCode: 400);
+            }
+
+            if (!user.IsValuesValid())
             {
                 Console.WriteLine("[DEBUG - AdminEndpoint] - Invalid User Input");
 
                 ResponseAPI<List<string>> errors = new ResponseAPI<List<string>>();
-                errors.Data = user.ErrorList();
+                errors.Data = user.ErrorList;
                 errors.Message = "Invalid User Input";
 
+                Console.WriteLine(errors.Data.Count());
 
                 return Results.Json(errors, statusCode: 422);
             }
 
             AdminDB admin_service = new AdminDB();
 
-            if (!admin_service.ValidateDB(user))
+            if (!await admin_service.ValidateDB(user))
             {
                 Console.WriteLine("[DEBUG - AdminEndpoint] - Unauthorized");
                 response.Message = "Unauthorized SignIn, Wrong Username or Password";

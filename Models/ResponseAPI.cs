@@ -2,7 +2,7 @@ namespace HyperBean.Models
 {
     class ResponseAPI<T>
     {
-        public string? Message;
-        public T? Data;
+        public string? Message { get; set; }
+        public T? Data { get; set; }
     }
 }

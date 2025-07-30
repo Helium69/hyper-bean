@@ -1,5 +1,6 @@
 using HyperBean.Services.AdminServices;
 using HyperBean.Helpers.AdminHelpers;
+using HyperBean.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,9 +12,18 @@ app.UseRouting();
 app.UseSession();
 app.UseStaticFiles();
 
-app.MapGet("/admin/validate-signin", () =>
+app.MapPost("/admin/validate-signin", async (HttpContext context) =>
 {
-    
+    AdminEndpoints response = new AdminEndpoints();
+    return await response.ValidateLogin(context);
+});
+
+app.MapGet("/", async (HttpContext context) =>
+{
+    AdminEndpoints res = new AdminEndpoints();
+    IResult response = await res.ValidateLogin(context);
+
+    return response;
 });
 
 app.Run();

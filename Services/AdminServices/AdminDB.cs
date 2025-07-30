@@ -6,11 +6,11 @@ namespace HyperBean.Services.AdminServices
 {
     class AdminDB
     {
-        public void InitiateDB()
+        public async Task InitiateDB()
         {
             using (var connection = new SqliteConnection($"Data Source={Filename.DB}"))
             {
-                connection.Open();
+                await connection.OpenAsync();
 
                 using (var command = connection.CreateCommand())
                 {
@@ -21,27 +21,27 @@ namespace HyperBean.Services.AdminServices
                         )
                     ";
 
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                 }
             }
         }
 
-        public bool ValidateDB(Admin user)
+        public async Task<bool> ValidateDB(Admin user)
         {
             Admin admin = new Admin();
-            InitiateDB();
+            await InitiateDB();
 
             using (var connection = new SqliteConnection($"Data Source={Filename.DB}"))
             {
-                connection.Open();
+                await connection.OpenAsync();
 
                 using (var command = connection.CreateCommand())
                 {
                     command.CommandText = $"SELECT * FROM {Filename.Table}";
 
-                    using (var reader = command.ExecuteReader())
+                    using (var reader = await command.ExecuteReaderAsync())
                     {
-                        while (reader.Read())
+                        while (await reader.ReadAsync())
                         {
                             admin.Username = reader["username"].ToString();
                             admin.Password = reader["password"].ToString();
