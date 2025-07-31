@@ -18,12 +18,10 @@ app.MapPost("/admin/validate-signin", async (HttpContext context) =>
     return await response.ValidateLogin(context);
 });
 
-app.MapGet("/", async (HttpContext context) =>
+app.MapGet("/admin/authorize-signin", (HttpContext context) =>
 {
-    AdminEndpoints res = new AdminEndpoints();
-    IResult response = await res.ValidateLogin(context);
-
-    return response;
+    AdminEndpoints response = new AdminEndpoints();
+    return response.IsAdminSessionActive(context);
 });
 
 app.Run();

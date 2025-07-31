@@ -1,3 +1,5 @@
+import * as toastService from "./../toast.js";
+
 document.getElementById("admin-signin").addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -13,10 +15,21 @@ document.getElementById("admin-signin").addEventListener("submit", async (e) => 
             password : password
         })})
 
-    const data = await response.json();
+    const responseData = await response.json();
 
-    console.log(data);
+    if (response.status === 422){
+        responseData.data.forEach(error => {
+            toastService.showToast("error", error);
+        });
+        return;
+    }
 
-    debugger;
+    if (response.status === 200){
+        toastService.showToast("success", responseData.message);
+        window.location.href = "home.html";
+        return;
+    }
+
+    toastService.showToast("error", responseData.message);
     
 });

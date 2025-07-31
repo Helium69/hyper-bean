@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyperBean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acde80a8466cbe9aa456c2272a7a2303c8950892")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90d150efa22b84f0a07989d5b5d05bdcc817fa0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyperBean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyperBean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

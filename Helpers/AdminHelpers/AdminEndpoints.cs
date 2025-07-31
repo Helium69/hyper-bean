@@ -38,8 +38,6 @@ namespace HyperBean.Helpers.AdminHelpers
                 errors.Data = user.ErrorList;
                 errors.Message = "Invalid User Input";
 
-                Console.WriteLine(errors.Data.Count());
-
                 return Results.Json(errors, statusCode: 422);
             }
 
@@ -56,8 +54,25 @@ namespace HyperBean.Helpers.AdminHelpers
             Console.WriteLine("[DEBUG - AdminEndpoint] - Success");
             response.Message = "Sign in Authorized";
 
+            context.Session.SetInt32("AdminActive", 1);
             return Results.Json(response, statusCode: 200);
 
+        }
+
+        public IResult IsAdminSessionActive(HttpContext context)
+        {
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            int? AdminStatus = context.Session.GetInt32("AdminActive");
+
+            if (AdminStatus is null || AdminStatus != 1)
+            {
+                response.Message = "Unauthorized access detected";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            response.Message = "User currently has authorized access";
+            return Results.Json(response, statusCode: 200);
         }
     }
 }

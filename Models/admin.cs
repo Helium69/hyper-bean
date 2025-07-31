@@ -1,14 +1,13 @@
-using System.Text.RegularExpressions;
-
 namespace HyperBean.Models
 {
     class Admin
     {
-        public string? Username { get; set; }
-        public string? Password { get; set; }
+        public string? Username { get; set; } = null;
+        public string? Password { get; set; } = null;
 
         // Error List
         private List<string> error_list = new List<string>();
+
         public List<string> ErrorList
         {
             get { return error_list; }
@@ -20,20 +19,18 @@ namespace HyperBean.Models
                 error_list.Add("Data possibly corrupted");
                 return false;
             }
-            
+
             // Username length 
 
             if (string.IsNullOrWhiteSpace(Username))
             {
                 error_list.Add("Username should not be empty");
             }
-
-            if (Username.Length > 15)
+            else if (Username.Length > 15)
             {
                 error_list.Add("Username should not exceed more than 15 characters");
             }
-
-            if (Username.Length < 5)
+            else if (Username.Length < 5)
             {
                 error_list.Add("Username should not exceed lower than 5 characters");
             }
@@ -44,13 +41,11 @@ namespace HyperBean.Models
             {
                 error_list.Add("Password should not be empty");
             }
-
-            if (Password.Length > 15)
+            else if (Password.Length > 15)
             {
                 error_list.Add("Password should not exceed more than 15 characters");
             }
-
-            if (Password.Length < 5)
+            else if (Password.Length < 5)
             {
                 error_list.Add("Password should not exceed lower than 5 characters");
             }

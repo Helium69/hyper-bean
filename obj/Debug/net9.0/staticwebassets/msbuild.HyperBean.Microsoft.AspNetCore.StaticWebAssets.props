@@ -18,6 +18,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\main-services\add-product-service.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\main-services\home-service.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HyperBean</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HyperBean</BasePath>
+      <RelativePath>services/main-services/home-service.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a5hzoexqwg</Fingerprint>
+      <Integrity>ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\main-services\home-service.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\main-services\signin.js'))">
       <SourceType>Package</SourceType>
       <SourceId>HyperBean</SourceId>
@@ -30,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>p5ppk2tmdt</Fingerprint>
-      <Integrity>nXd3rKSFEYlOsDc/IcB77V0xQNxU9bntr0SFmJI/7YQ=</Integrity>
+      <Fingerprint>r3jp9z8dbm</Fingerprint>
+      <Integrity>Cf4N10LHk4K92q3tT5iGSX6ZQLT5NWBpPsjbjlUag74=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\main-services\signin.js'))</OriginalItemSpec>
@@ -84,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>etakcxlt3x</Fingerprint>
-      <Integrity>wrMRXZiNx+wGx73Vq7IgpLjfix32/H52x1sJnDmQaS4=</Integrity>
+      <Fingerprint>jcax5jfcwd</Fingerprint>
+      <Integrity>o/NyLYAWTCEsuoS8+3L79YTEVL/tjP0E5wMDXrx7WhQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\sidebar.js'))</OriginalItemSpec>
@@ -102,11 +120,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r5tcdzf86z</Fingerprint>
-      <Integrity>n6eAWY7RiXRQ79yax+e1WNoQqe7XzBDYPZcUtc1p5vk=</Integrity>
+      <Fingerprint>gqq5byovm3</Fingerprint>
+      <Integrity>mAltz9Jx+jk3yOUQCj81c7HNsm6LTsmikF679scTm24=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\toast.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\validate-admin-signin.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HyperBean</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HyperBean</BasePath>
+      <RelativePath>services/validate-admin-signin.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>eg8u4klyc7</Fingerprint>
+      <Integrity>TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\validate-admin-signin.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\styles\output.css'))">
       <SourceType>Package</SourceType>
@@ -120,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tc2vym6qoy</Fingerprint>
-      <Integrity>rXf0Mg7VYAkaTBZO47scRFNijYaGxMwSDSvY6W5l53I=</Integrity>
+      <Fingerprint>lyhwdpmh9j</Fingerprint>
+      <Integrity>EwxPzkMSCcaYcZ9dsHx/k+DusyeC7zMhxbfrTsZJUy4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\styles\output.css'))</OriginalItemSpec>
@@ -156,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cb4yixodmm</Fingerprint>
-      <Integrity>qH/KGfrs0OGZKqwsaZP3ps3YjLQA60obeXZdnfWxKNE=</Integrity>
+      <Fingerprint>gla748vvr6</Fingerprint>
+      <Integrity>nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\tabs\admin\home.html'))</OriginalItemSpec>
@@ -174,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hzpeqg677d</Fingerprint>
-      <Integrity>88onD414SnSoMGchuDw6Z3WKc9JNNNx9pbjGNj3CZ6M=</Integrity>
+      <Fingerprint>bl4m8rubva</Fingerprint>
+      <Integrity>QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\tabs\admin\signin.html'))</OriginalItemSpec>
