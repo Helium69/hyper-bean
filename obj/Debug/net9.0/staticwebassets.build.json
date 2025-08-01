@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oqoLGjQty/XUKcXlAtZngIy8bYRWDFuHswSgzOojm1I=",
+  "Hash": "x5/pYpg44m3vyvM5CtYZJ8DJI9nan92t2HxBYm0E3XE=",
   "Source": "HyperBean",
   "BasePath": "_content/HyperBean",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-a5hzoexqwg.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-5ipweew5fc.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "services/main-services/home-service#[.{fingerprint=a5hzoexqwg}]?.js.gz",
+      "RelativePath": "services/main-services/home-service#[.{fingerprint=5ipweew5fc}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,19 +31,19 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\home-service.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "b5b58bxy3i",
-      "Integrity": "UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug=",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\home-service.js"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-1d8q47j2j9.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-u0wg2si6t5.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "tabs/admin/view-users#[.{fingerprint=1d8q47j2j9}]?.html.gz",
+      "RelativePath": "tabs/admin/view-users#[.{fingerprint=u0wg2si6t5}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,19 +52,19 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-users.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9wph74lfc5",
-      "Integrity": "p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8=",
+      "Fingerprint": "j3gn1evj35",
+      "Integrity": "wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-users.html"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-t55gyzbi5s.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-3kxrmaq9hh.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "tabs/admin/view-products#[.{fingerprint=t55gyzbi5s}]?.html.gz",
+      "RelativePath": "tabs/admin/view-products#[.{fingerprint=3kxrmaq9hh}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -73,8 +73,8 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-products.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "n3hv20gpmw",
-      "Integrity": "U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY=",
+      "Fingerprint": "ugmglghedu",
+      "Integrity": "vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-products.html"
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\view-product-service.js"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-v432q74r6d.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-29e0ool37n.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "tabs/admin/add-product#[.{fingerprint=v432q74r6d}]?.html.gz",
+      "RelativePath": "tabs/admin/add-product#[.{fingerprint=29e0ool37n}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -115,19 +115,19 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\add-product.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "c6fgf9h4z6",
-      "Integrity": "1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw=",
+      "Fingerprint": "6c8hhc3m4x",
+      "Integrity": "iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\add-product.html"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-bl4m8rubva.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-n0qyabeocz.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "tabs/admin/signin#[.{fingerprint=bl4m8rubva}]?.html.gz",
+      "RelativePath": "tabs/admin/signin#[.{fingerprint=n0qyabeocz}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,19 +136,19 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\signin.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hblgmr6omr",
-      "Integrity": "E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY=",
+      "Fingerprint": "3200qeayii",
+      "Integrity": "S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\signin.html"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-gla748vvr6.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-d9kkfncho4.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "tabs/admin/home#[.{fingerprint=gla748vvr6}]?.html.gz",
+      "RelativePath": "tabs/admin/home#[.{fingerprint=d9kkfncho4}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -157,8 +157,8 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\home.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5ga7s9c1ix",
-      "Integrity": "W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw=",
+      "Fingerprint": "2kkk2y83ue",
+      "Integrity": "Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\home.html"
@@ -227,12 +227,12 @@
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\toast.js"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-j4g3e1lmdt.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-vdeje173d6.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "services/main-services/add-product-service#[.{fingerprint=j4g3e1lmdt}]?.js.gz",
+      "RelativePath": "services/main-services/add-product-service#[.{fingerprint=vdeje173d6}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -241,8 +241,8 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\add-product-service.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "40q7jag8gu",
-      "Integrity": "nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM=",
+      "Fingerprint": "ampall5r7k",
+      "Integrity": "zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\add-product-service.js"
@@ -269,12 +269,12 @@
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\signin.js"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-eg8u4klyc7.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-nhn8o6szg3.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "services/validate-admin-signin#[.{fingerprint=eg8u4klyc7}]?.js.gz",
+      "RelativePath": "services/validate-admin-signin#[.{fingerprint=nhn8o6szg3}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -283,19 +283,19 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "c18ls2t77s",
-      "Integrity": "8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0=",
+      "Fingerprint": "yzuurpk2lz",
+      "Integrity": "brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js"
     },
     {
-      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-qzu4riheqo.gz",
+      "Identity": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-jfk0s52gjj.gz",
       "SourceId": "HyperBean",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HyperBean",
-      "RelativePath": "services/main-services/view-users-service#[.{fingerprint=qzu4riheqo}]?.js.gz",
+      "RelativePath": "services/main-services/view-users-service#[.{fingerprint=jfk0s52gjj}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -304,8 +304,8 @@
       "RelatedAsset": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\view-users-service.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hmf20myu0p",
-      "Integrity": "Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI=",
+      "Fingerprint": "ckhsy25iug",
+      "Integrity": "7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\view-users-service.js"
@@ -325,8 +325,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j4g3e1lmdt",
-      "Integrity": "nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38=",
+      "Fingerprint": "vdeje173d6",
+      "Integrity": "k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\services\\main-services\\add-product-service.js"
@@ -346,8 +346,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a5hzoexqwg",
-      "Integrity": "ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8=",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\services\\main-services\\home-service.js"
@@ -409,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qzu4riheqo",
-      "Integrity": "GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo=",
+      "Fingerprint": "jfk0s52gjj",
+      "Integrity": "kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\services\\main-services\\view-users-service.js"
@@ -472,8 +472,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eg8u4klyc7",
-      "Integrity": "TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0=",
+      "Fingerprint": "nhn8o6szg3",
+      "Integrity": "65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\services\\validate-admin-signin.js"
@@ -514,8 +514,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "v432q74r6d",
-      "Integrity": "oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk=",
+      "Fingerprint": "29e0ool37n",
+      "Integrity": "2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\tabs\\admin\\add-product.html"
@@ -535,8 +535,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gla748vvr6",
-      "Integrity": "nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us=",
+      "Fingerprint": "d9kkfncho4",
+      "Integrity": "kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\tabs\\admin\\home.html"
@@ -556,8 +556,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bl4m8rubva",
-      "Integrity": "QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24=",
+      "Fingerprint": "n0qyabeocz",
+      "Integrity": "yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\tabs\\admin\\signin.html"
@@ -577,8 +577,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t55gyzbi5s",
-      "Integrity": "34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk=",
+      "Fingerprint": "3kxrmaq9hh",
+      "Integrity": "owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\tabs\\admin\\view-products.html"
@@ -598,8 +598,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1d8q47j2j9",
-      "Integrity": "K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU=",
+      "Fingerprint": "u0wg2si6t5",
+      "Integrity": "4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\tabs\\admin\\view-users.html"
@@ -607,13 +607,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "services/main-services/add-product-service.j4g3e1lmdt.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-j4g3e1lmdt.gz",
+      "Route": "services/main-services/add-product-service.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-vdeje173d6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004975124378"
+          "Quality": "0.004629629630"
         }
       ],
       "ResponseHeaders": [
@@ -623,19 +623,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "200"
+          "Value": "215"
         },
         {
           "Name": "ETag",
-          "Value": "\"nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM=\""
+          "Value": "\"zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 01:31:11 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:29 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -651,26 +651,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38=\""
+          "Value": "W/\"k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "j4g3e1lmdt"
-        },
-        {
-          "Name": "label",
-          "Value": "services/main-services/add-product-service.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38="
+          "Value": "sha256-k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ="
         }
       ]
     },
     {
-      "Route": "services/main-services/add-product-service.j4g3e1lmdt.js",
+      "Route": "services/main-services/add-product-service.js",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\add-product-service.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -680,7 +672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "559"
         },
         {
           "Name": "Content-Type",
@@ -688,11 +680,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38=\""
+          "Value": "\"k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 01:31:11 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ="
+        }
+      ]
+    },
+    {
+      "Route": "services/main-services/add-product-service.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-vdeje173d6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:01:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE="
+        }
+      ]
+    },
+    {
+      "Route": "services/main-services/add-product-service.vdeje173d6.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-vdeje173d6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004629629630"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:01:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vdeje173d6"
+        },
+        {
+          "Name": "label",
+          "Value": "services/main-services/add-product-service.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ="
+        }
+      ]
+    },
+    {
+      "Route": "services/main-services/add-product-service.vdeje173d6.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\add-product-service.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:01:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -702,7 +839,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4g3e1lmdt"
+          "Value": "vdeje173d6"
         },
         {
           "Name": "label",
@@ -710,13 +847,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38="
+          "Value": "sha256-k3GItxVyQ+1I7HLjjXlD4dAWFOQFfoPYTN2WMCYcZGQ="
         }
       ]
     },
     {
-      "Route": "services/main-services/add-product-service.j4g3e1lmdt.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-j4g3e1lmdt.gz",
+      "Route": "services/main-services/add-product-service.vdeje173d6.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-vdeje173d6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -725,7 +862,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "200"
+          "Value": "215"
         },
         {
           "Name": "Content-Type",
@@ -733,11 +870,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM=\""
+          "Value": "\"zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 01:31:11 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -755,7 +892,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4g3e1lmdt"
+          "Value": "vdeje173d6"
         },
         {
           "Name": "label",
@@ -763,18 +900,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM="
+          "Value": "sha256-zqYbQqNOhTnHfu8W/Y5jrQd4lk7Pvb7w7SW8Vk5QNgE="
         }
       ]
     },
     {
-      "Route": "services/main-services/add-product-service.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-j4g3e1lmdt.gz",
+      "Route": "services/main-services/home-service.5ipweew5fc.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-5ipweew5fc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004975124378"
+          "Quality": "1.000000000000"
         }
       ],
       "ResponseHeaders": [
@@ -784,152 +921,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "200"
+          "Value": "0"
         },
         {
           "Name": "ETag",
-          "Value": "\"nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 01:31:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38="
-        }
-      ]
-    },
-    {
-      "Route": "services/main-services/add-product-service.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\add-product-service.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "529"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 01:31:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nUllB9N1cnqmE0clOf3rtRqNmE070TXGN7vVEu6Tx38="
-        }
-      ]
-    },
-    {
-      "Route": "services/main-services/add-product-service.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\rgxwe6kb0t-j4g3e1lmdt.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "200"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 01:31:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nCX+d58FipHHsgxzpfhPYOTs1zLkV0sTyM11+5pLhMM="
-        }
-      ]
-    },
-    {
-      "Route": "services/main-services/home-service.a5hzoexqwg.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-a5hzoexqwg.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.006211180124"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "160"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:01:46 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -949,13 +949,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8=\""
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a5hzoexqwg"
+          "Value": "5ipweew5fc"
         },
         {
           "Name": "label",
@@ -963,12 +963,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
-      "Route": "services/main-services/home-service.a5hzoexqwg.js",
+      "Route": "services/main-services/home-service.5ipweew5fc.js",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\home-service.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -978,7 +978,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "173"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
@@ -986,11 +986,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:01:46 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1000,7 +1000,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a5hzoexqwg"
+          "Value": "5ipweew5fc"
         },
         {
           "Name": "label",
@@ -1008,13 +1008,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
-      "Route": "services/main-services/home-service.a5hzoexqwg.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-a5hzoexqwg.gz",
+      "Route": "services/main-services/home-service.5ipweew5fc.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-5ipweew5fc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1023,7 +1023,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
@@ -1031,11 +1031,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:01:46 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1053,7 +1053,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a5hzoexqwg"
+          "Value": "5ipweew5fc"
         },
         {
           "Name": "label",
@@ -1061,18 +1061,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
       "Route": "services/main-services/home-service.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-a5hzoexqwg.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-5ipweew5fc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.006211180124"
+          "Quality": "1.000000000000"
         }
       ],
       "ResponseHeaders": [
@@ -1082,15 +1082,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160"
+          "Value": "0"
         },
         {
           "Name": "ETag",
-          "Value": "\"UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:01:46 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1110,13 +1110,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8=\""
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
@@ -1131,7 +1131,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "173"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
@@ -1139,11 +1139,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:01:46 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1153,13 +1153,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ch4XoEuzqdSaiXEQn7yI/qavbo0kSogdBk1tQydHgy8="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
       "Route": "services/main-services/home-service.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-a5hzoexqwg.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\0j1ov5jupe-5ipweew5fc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1168,7 +1168,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
@@ -1176,11 +1176,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:01:46 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1198,7 +1198,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UZR5f+QTHPnPdXW+tfUSaP5CUu7Sz/T0onRvD4MyXug="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
@@ -1525,7 +1525,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:12:22 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1586,7 +1586,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:12:22 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1631,7 +1631,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:12:22 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1686,7 +1686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:12:22 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1739,7 +1739,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:12:22 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1776,7 +1776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:12:22 GMT"
+          "Value": "Thu, 31 Jul 2025 12:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1799,13 +1799,13 @@
       ]
     },
     {
-      "Route": "services/main-services/view-users-service.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-qzu4riheqo.gz",
+      "Route": "services/main-services/view-users-service.jfk0s52gjj.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-jfk0s52gjj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001406469761"
+          "Quality": "0.001404494382"
         }
       ],
       "ResponseHeaders": [
@@ -1815,19 +1815,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "710"
+          "Value": "711"
         },
         {
           "Name": "ETag",
-          "Value": "\"Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI=\""
+          "Value": "\"7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:16:34 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -1843,18 +1843,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo=\""
+          "Value": "W/\"kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "jfk0s52gjj"
+        },
+        {
+          "Name": "label",
+          "Value": "services/main-services/view-users-service.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo="
+          "Value": "sha256-kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4="
         }
       ]
     },
     {
-      "Route": "services/main-services/view-users-service.js",
+      "Route": "services/main-services/view-users-service.jfk0s52gjj.js",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\view-users-service.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1864,7 +1872,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1740"
+          "Value": "1748"
         },
         {
           "Name": "Content-Type",
@@ -1872,121 +1880,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo=\""
+          "Value": "\"kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:16:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo="
-        }
-      ]
-    },
-    {
-      "Route": "services/main-services/view-users-service.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-qzu4riheqo.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "710"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:16:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI="
-        }
-      ]
-    },
-    {
-      "Route": "services/main-services/view-users-service.qzu4riheqo.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-qzu4riheqo.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001406469761"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "710"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:16:34 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:03 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qzu4riheqo"
+          "Value": "jfk0s52gjj"
         },
         {
           "Name": "label",
@@ -1994,13 +1902,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo="
+          "Value": "sha256-kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4="
         }
       ]
     },
     {
-      "Route": "services/main-services/view-users-service.qzu4riheqo.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\view-users-service.js",
+      "Route": "services/main-services/view-users-service.jfk0s52gjj.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-jfk0s52gjj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2009,7 +1917,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1740"
+          "Value": "711"
         },
         {
           "Name": "Content-Type",
@@ -2017,56 +1925,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo=\""
+          "Value": "\"7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:16:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qzu4riheqo"
-        },
-        {
-          "Name": "label",
-          "Value": "services/main-services/view-users-service.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-GndHD7Jx0mn1svwpwsnneSDyAwnlTQcZEAvNCTE9qxo="
-        }
-      ]
-    },
-    {
-      "Route": "services/main-services/view-users-service.qzu4riheqo.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-qzu4riheqo.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "710"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:16:34 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2084,7 +1947,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qzu4riheqo"
+          "Value": "jfk0s52gjj"
         },
         {
           "Name": "label",
@@ -2092,7 +1955,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z4xkg1mBEsXQlU1zgwvMDE9Q2mUeXS60IBisCd+nKLI="
+          "Value": "sha256-7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY="
+        }
+      ]
+    },
+    {
+      "Route": "services/main-services/view-users-service.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-jfk0s52gjj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001404494382"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "711"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:02:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4="
+        }
+      ]
+    },
+    {
+      "Route": "services/main-services/view-users-service.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\main-services\\view-users-service.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:02:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kaj7uRXR/aHC+Y9ZMH7s0mizxELnw1rqJYQtcnV7wv4="
+        }
+      ]
+    },
+    {
+      "Route": "services/main-services/view-users-service.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\wnfbbwjyo5-jfk0s52gjj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:02:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ME6+vkSLttmzfKVpvwKNKR8olltN7a8Ui9mutHgQvY="
         }
       ]
     },
@@ -2693,13 +2693,13 @@
       ]
     },
     {
-      "Route": "services/validate-admin-signin.eg8u4klyc7.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-eg8u4klyc7.gz",
+      "Route": "services/validate-admin-signin.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-nhn8o6szg3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004166666667"
+          "Quality": "0.003424657534"
         }
       ],
       "ResponseHeaders": [
@@ -2709,19 +2709,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "239"
+          "Value": "291"
         },
         {
           "Name": "ETag",
-          "Value": "\"8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0=\""
+          "Value": "\"brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 05:59:52 GMT"
+          "Value": "Thu, 31 Jul 2025 12:06:51 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2737,26 +2737,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0=\""
+          "Value": "W/\"65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "eg8u4klyc7"
-        },
-        {
-          "Name": "label",
-          "Value": "services/validate-admin-signin.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0="
+          "Value": "sha256-65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q="
         }
       ]
     },
     {
-      "Route": "services/validate-admin-signin.eg8u4klyc7.js",
+      "Route": "services/validate-admin-signin.js",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2766,7 +2758,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "356"
+          "Value": "466"
         },
         {
           "Name": "Content-Type",
@@ -2774,11 +2766,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0=\""
+          "Value": "\"65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 05:59:52 GMT"
+          "Value": "Thu, 31 Jul 2025 12:06:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q="
+        }
+      ]
+    },
+    {
+      "Route": "services/validate-admin-signin.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-nhn8o6szg3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "291"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:06:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50="
+        }
+      ]
+    },
+    {
+      "Route": "services/validate-admin-signin.nhn8o6szg3.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-nhn8o6szg3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003424657534"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "291"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:06:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nhn8o6szg3"
+        },
+        {
+          "Name": "label",
+          "Value": "services/validate-admin-signin.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q="
+        }
+      ]
+    },
+    {
+      "Route": "services/validate-admin-signin.nhn8o6szg3.js",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:06:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2788,7 +2925,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eg8u4klyc7"
+          "Value": "nhn8o6szg3"
         },
         {
           "Name": "label",
@@ -2796,13 +2933,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0="
+          "Value": "sha256-65ixc7jDtRw0BKr+OtoKdKGHxSWbAN1dF2vxVmhwI/Q="
         }
       ]
     },
     {
-      "Route": "services/validate-admin-signin.eg8u4klyc7.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-eg8u4klyc7.gz",
+      "Route": "services/validate-admin-signin.nhn8o6szg3.js.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-nhn8o6szg3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2811,7 +2948,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "239"
+          "Value": "291"
         },
         {
           "Name": "Content-Type",
@@ -2819,11 +2956,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0=\""
+          "Value": "\"brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 05:59:52 GMT"
+          "Value": "Thu, 31 Jul 2025 12:06:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2841,7 +2978,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eg8u4klyc7"
+          "Value": "nhn8o6szg3"
         },
         {
           "Name": "label",
@@ -2849,144 +2986,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0="
-        }
-      ]
-    },
-    {
-      "Route": "services/validate-admin-signin.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-eg8u4klyc7.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.004166666667"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "239"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 05:59:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0="
-        }
-      ]
-    },
-    {
-      "Route": "services/validate-admin-signin.js",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "356"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 05:59:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-TqqJ9Yb3km9dEOgrhCa3SQ/eAYyPKZHaZrovQHnrKo0="
-        }
-      ]
-    },
-    {
-      "Route": "services/validate-admin-signin.js.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\v25z3m71ga-eg8u4klyc7.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "239"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 05:59:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8I8x2rfImU9ktYrItTRup3vyz6Gw4O0hp3F9XfL8wC0="
+          "Value": "sha256-brcuZYhigXYljbzcijFOk+IkF8gP/alprqoD+KXmP50="
         }
       ]
     },
@@ -3289,13 +3289,13 @@
       ]
     },
     {
-      "Route": "tabs/admin/add-product.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-v432q74r6d.gz",
+      "Route": "tabs/admin/add-product.29e0ool37n.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-29e0ool37n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000723065799"
+          "Quality": "0.000708717222"
         }
       ],
       "ResponseHeaders": [
@@ -3305,19 +3305,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1382"
+          "Value": "1410"
         },
         {
           "Name": "ETag",
-          "Value": "\"1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw=\""
+          "Value": "\"iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:53 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:36 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3333,18 +3333,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk=\""
+          "Value": "W/\"2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "29e0ool37n"
+        },
+        {
+          "Name": "label",
+          "Value": "tabs/admin/add-product.html"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk="
+          "Value": "sha256-2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64="
         }
       ]
     },
     {
-      "Route": "tabs/admin/add-product.html",
+      "Route": "tabs/admin/add-product.29e0ool37n.html",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\add-product.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3354,7 +3362,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4863"
+          "Value": "4946"
         },
         {
           "Name": "Content-Type",
@@ -3362,121 +3370,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk=\""
+          "Value": "\"2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/add-product.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-v432q74r6d.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1382"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/add-product.v432q74r6d.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-v432q74r6d.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000723065799"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1382"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:53 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:36 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v432q74r6d"
+          "Value": "29e0ool37n"
         },
         {
           "Name": "label",
@@ -3484,13 +3392,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk="
+          "Value": "sha256-2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64="
         }
       ]
     },
     {
-      "Route": "tabs/admin/add-product.v432q74r6d.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\add-product.html",
+      "Route": "tabs/admin/add-product.29e0ool37n.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-29e0ool37n.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3499,7 +3407,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4863"
+          "Value": "1410"
         },
         {
           "Name": "Content-Type",
@@ -3507,56 +3415,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk=\""
+          "Value": "\"iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "v432q74r6d"
-        },
-        {
-          "Name": "label",
-          "Value": "tabs/admin/add-product.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-oa3S+DfoJaDLp5Rh4ZcHd+d88V6GoJPEsYdyFu8RgPk="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/add-product.v432q74r6d.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-v432q74r6d.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1382"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:53 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3574,7 +3437,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v432q74r6d"
+          "Value": "29e0ool37n"
         },
         {
           "Name": "label",
@@ -3582,18 +3445,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1PN/kjp9a98ckUNzx4mP4cFNGr9j9ChVQvqKyCJJEpw="
+          "Value": "sha256-iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE="
         }
       ]
     },
     {
-      "Route": "tabs/admin/home.gla748vvr6.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-gla748vvr6.gz",
+      "Route": "tabs/admin/add-product.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-29e0ool37n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000868809731"
+          "Quality": "0.000708717222"
         }
       ],
       "ResponseHeaders": [
@@ -3603,15 +3466,152 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1150"
+          "Value": "1410"
         },
         {
           "Name": "ETag",
-          "Value": "\"W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw=\""
+          "Value": "\"iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:02:21 GMT"
+          "Value": "Thu, 31 Jul 2025 12:02:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/add-product.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\add-product.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:02:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2i9fIF8L0z7IMIDa7HoT6wt/oN0ouuv3NmoMPGmfI64="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/add-product.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\czk19hryq7-29e0ool37n.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1410"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:02:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iqoBqwyzWNG2GsOK/p3CwyHk8iYLs8j/97wLoxijYeE="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/home.d9kkfncho4.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-d9kkfncho4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000875656743"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1141"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3631,13 +3631,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us=\""
+          "Value": "W/\"kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gla748vvr6"
+          "Value": "d9kkfncho4"
         },
         {
           "Name": "label",
@@ -3645,12 +3645,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us="
+          "Value": "sha256-kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8="
         }
       ]
     },
     {
-      "Route": "tabs/admin/home.gla748vvr6.html",
+      "Route": "tabs/admin/home.d9kkfncho4.html",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\home.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3660,7 +3660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3172"
+          "Value": "3132"
         },
         {
           "Name": "Content-Type",
@@ -3668,11 +3668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us=\""
+          "Value": "\"kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:02:21 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3682,7 +3682,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gla748vvr6"
+          "Value": "d9kkfncho4"
         },
         {
           "Name": "label",
@@ -3690,13 +3690,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us="
+          "Value": "sha256-kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8="
         }
       ]
     },
     {
-      "Route": "tabs/admin/home.gla748vvr6.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-gla748vvr6.gz",
+      "Route": "tabs/admin/home.d9kkfncho4.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-d9kkfncho4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3705,7 +3705,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1150"
+          "Value": "1141"
         },
         {
           "Name": "Content-Type",
@@ -3713,11 +3713,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw=\""
+          "Value": "\"Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:02:21 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3735,7 +3735,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gla748vvr6"
+          "Value": "d9kkfncho4"
         },
         {
           "Name": "label",
@@ -3743,18 +3743,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw="
+          "Value": "sha256-Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs="
         }
       ]
     },
     {
       "Route": "tabs/admin/home.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-gla748vvr6.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-d9kkfncho4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000868809731"
+          "Quality": "0.000875656743"
         }
       ],
       "ResponseHeaders": [
@@ -3764,15 +3764,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1150"
+          "Value": "1141"
         },
         {
           "Name": "ETag",
-          "Value": "\"W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw=\""
+          "Value": "\"Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:02:21 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3792,13 +3792,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us=\""
+          "Value": "W/\"kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us="
+          "Value": "sha256-kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8="
         }
       ]
     },
@@ -3813,7 +3813,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3172"
+          "Value": "3132"
         },
         {
           "Name": "Content-Type",
@@ -3821,11 +3821,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us=\""
+          "Value": "\"kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:02:21 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3835,13 +3835,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nHqfm29zg0SBy0soqdLdkrIHCliVIlp6AkKzgJvA3us="
+          "Value": "sha256-kc6CKM4VnIsRFfmGd1UIsFUa+2t6w4k4LdfDvT/lzx8="
         }
       ]
     },
     {
       "Route": "tabs/admin/home.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-gla748vvr6.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\l8tt4myebh-d9kkfncho4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3850,7 +3850,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1150"
+          "Value": "1141"
         },
         {
           "Name": "Content-Type",
@@ -3858,11 +3858,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw=\""
+          "Value": "\"Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 06:02:21 GMT"
+          "Value": "Thu, 31 Jul 2025 12:11:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3880,18 +3880,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-W2+UHzeB7TuhT5WWgjcWcK/XV84dDPdMnN9WWqZ9nZw="
+          "Value": "sha256-Eu8USaNNMg8cwz0/WrMqhV0uQquNQ7pSJgr13GJPjEs="
         }
       ]
     },
     {
-      "Route": "tabs/admin/signin.bl4m8rubva.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-bl4m8rubva.gz",
+      "Route": "tabs/admin/signin.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-n0qyabeocz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001494768311"
+          "Quality": "0.001501501502"
         }
       ],
       "ResponseHeaders": [
@@ -3901,19 +3901,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "665"
         },
         {
           "Name": "ETag",
-          "Value": "\"E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY=\""
+          "Value": "\"S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 02:38:56 GMT"
+          "Value": "Thu, 31 Jul 2025 11:51:46 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3929,26 +3929,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24=\""
+          "Value": "W/\"yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "bl4m8rubva"
-        },
-        {
-          "Name": "label",
-          "Value": "tabs/admin/signin.html"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24="
+          "Value": "sha256-yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ="
         }
       ]
     },
     {
-      "Route": "tabs/admin/signin.bl4m8rubva.html",
+      "Route": "tabs/admin/signin.html",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\signin.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3958,7 +3950,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1554"
+          "Value": "1546"
         },
         {
           "Name": "Content-Type",
@@ -3966,11 +3958,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24=\""
+          "Value": "\"yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 02:38:56 GMT"
+          "Value": "Thu, 31 Jul 2025 11:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/signin.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-n0qyabeocz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 11:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/signin.n0qyabeocz.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-n0qyabeocz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001501501502"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "665"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 11:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n0qyabeocz"
+        },
+        {
+          "Name": "label",
+          "Value": "tabs/admin/signin.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/signin.n0qyabeocz.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\signin.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 11:51:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3980,7 +4117,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bl4m8rubva"
+          "Value": "n0qyabeocz"
         },
         {
           "Name": "label",
@@ -3988,13 +4125,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24="
+          "Value": "sha256-yRGxzRuO7fv4+peBA4PJpnKXBNWEtx21JsZYUK588VQ="
         }
       ]
     },
     {
-      "Route": "tabs/admin/signin.bl4m8rubva.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-bl4m8rubva.gz",
+      "Route": "tabs/admin/signin.n0qyabeocz.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-n0qyabeocz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4003,7 +4140,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "665"
         },
         {
           "Name": "Content-Type",
@@ -4011,11 +4148,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY=\""
+          "Value": "\"S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 02:38:56 GMT"
+          "Value": "Thu, 31 Jul 2025 11:51:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4033,7 +4170,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bl4m8rubva"
+          "Value": "n0qyabeocz"
         },
         {
           "Name": "label",
@@ -4041,18 +4178,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY="
+          "Value": "sha256-S3L0y5Ke2tV4+qsirKTnJ9giVfL5Qm61Jmya9ELwdsQ="
         }
       ]
     },
     {
-      "Route": "tabs/admin/signin.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-bl4m8rubva.gz",
+      "Route": "tabs/admin/view-products.3kxrmaq9hh.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-3kxrmaq9hh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001494768311"
+          "Quality": "0.000533049041"
         }
       ],
       "ResponseHeaders": [
@@ -4062,19 +4199,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "1875"
         },
         {
           "Name": "ETag",
-          "Value": "\"E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY=\""
+          "Value": "\"vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 02:38:56 GMT"
+          "Value": "Thu, 31 Jul 2025 12:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4090,155 +4227,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24=\""
+          "Value": "W/\"owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "3kxrmaq9hh"
+        },
+        {
+          "Name": "label",
+          "Value": "tabs/admin/view-products.html"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24="
+          "Value": "sha256-owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU="
         }
       ]
     },
     {
-      "Route": "tabs/admin/signin.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\signin.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1554"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 02:38:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-QUtsMYpNKR+3VLAZ0cKim5b/Z/YjSEYrrmuhbiTpQ24="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/signin.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\i48xtobr4z-bl4m8rubva.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "668"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 02:38:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-E64uQMbRBJLYnhOtwdl8f/kW8lalDM5Uf1IQh2gpOlY="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-products.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-t55gyzbi5s.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000540832883"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1848"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-products.html",
+      "Route": "tabs/admin/view-products.3kxrmaq9hh.html",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-products.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4248,7 +4256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8580"
+          "Value": "8665"
         },
         {
           "Name": "Content-Type",
@@ -4256,121 +4264,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk=\""
+          "Value": "\"owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-products.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-t55gyzbi5s.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1848"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-products.t55gyzbi5s.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-t55gyzbi5s.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000540832883"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1848"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:37 GMT"
+          "Value": "Thu, 31 Jul 2025 12:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t55gyzbi5s"
+          "Value": "3kxrmaq9hh"
         },
         {
           "Name": "label",
@@ -4378,13 +4286,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk="
+          "Value": "sha256-owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU="
         }
       ]
     },
     {
-      "Route": "tabs/admin/view-products.t55gyzbi5s.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-products.html",
+      "Route": "tabs/admin/view-products.3kxrmaq9hh.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-3kxrmaq9hh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4393,7 +4301,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8580"
+          "Value": "1875"
         },
         {
           "Name": "Content-Type",
@@ -4401,56 +4309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk=\""
+          "Value": "\"vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "t55gyzbi5s"
-        },
-        {
-          "Name": "label",
-          "Value": "tabs/admin/view-products.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-34NdCAlrnGDxZapxD8xNdEtbzMAFdDfTwf88HuvHgnk="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-products.t55gyzbi5s.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-t55gyzbi5s.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1848"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:13:37 GMT"
+          "Value": "Thu, 31 Jul 2025 12:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4468,7 +4331,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t55gyzbi5s"
+          "Value": "3kxrmaq9hh"
         },
         {
           "Name": "label",
@@ -4476,18 +4339,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-U+pUw7+iYpRJnMUahV3LCx3BBZ1WjtvguNWX7+4a1iY="
+          "Value": "sha256-vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0="
         }
       ]
     },
     {
-      "Route": "tabs/admin/view-users.1d8q47j2j9.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-1d8q47j2j9.gz",
+      "Route": "tabs/admin/view-products.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-3kxrmaq9hh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000908265213"
+          "Quality": "0.000533049041"
         }
       ],
       "ResponseHeaders": [
@@ -4497,19 +4360,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1100"
+          "Value": "1875"
         },
         {
           "Name": "ETag",
-          "Value": "\"p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8=\""
+          "Value": "\"vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:14:16 GMT"
+          "Value": "Thu, 31 Jul 2025 12:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4525,26 +4388,155 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU=\""
+          "Value": "W/\"owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1d8q47j2j9"
-        },
-        {
-          "Name": "label",
-          "Value": "tabs/admin/view-users.html"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU="
+          "Value": "sha256-owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU="
         }
       ]
     },
     {
-      "Route": "tabs/admin/view-users.1d8q47j2j9.html",
+      "Route": "tabs/admin/view-products.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-products.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:08:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-owA/vEB72vpoTKCJGgye89iiJVK2kq9eHlUztxps2OU="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/view-products.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\9ap98dfjml-3kxrmaq9hh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:08:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vtp8vQyXn+1eoLRRPdKKSXeokbT69Twt9CQoRGSqNK0="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/view-users.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-u0wg2si6t5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000891265597"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1121"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:08:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/view-users.html",
       "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-users.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4554,7 +4546,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2926"
+          "Value": "2979"
         },
         {
           "Name": "Content-Type",
@@ -4562,11 +4554,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU=\""
+          "Value": "\"4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:14:16 GMT"
+          "Value": "Thu, 31 Jul 2025 12:08:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/view-users.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-u0wg2si6t5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:08:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/view-users.u0wg2si6t5.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-u0wg2si6t5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000891265597"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1121"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:08:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u0wg2si6t5"
+        },
+        {
+          "Name": "label",
+          "Value": "tabs/admin/view-users.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0="
+        }
+      ]
+    },
+    {
+      "Route": "tabs/admin/view-users.u0wg2si6t5.html",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-users.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 31 Jul 2025 12:08:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4576,7 +4713,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1d8q47j2j9"
+          "Value": "u0wg2si6t5"
         },
         {
           "Name": "label",
@@ -4584,13 +4721,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU="
+          "Value": "sha256-4ifRaQs0x3ybdS9gRxptL0KdhYM7O7xfq1wDFHnJfM0="
         }
       ]
     },
     {
-      "Route": "tabs/admin/view-users.1d8q47j2j9.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-1d8q47j2j9.gz",
+      "Route": "tabs/admin/view-users.u0wg2si6t5.html.gz",
+      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-u0wg2si6t5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4599,7 +4736,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1100"
+          "Value": "1121"
         },
         {
           "Name": "Content-Type",
@@ -4607,11 +4744,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8=\""
+          "Value": "\"wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:14:16 GMT"
+          "Value": "Thu, 31 Jul 2025 12:08:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4629,7 +4766,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1d8q47j2j9"
+          "Value": "u0wg2si6t5"
         },
         {
           "Name": "label",
@@ -4637,144 +4774,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-users.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-1d8q47j2j9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000908265213"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1100"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:14:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-users.html",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-users.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2926"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:14:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-K6M64HBmGk6vl8QHRLCTBDs7Y39p35r8yvk19vpKwIU="
-        }
-      ]
-    },
-    {
-      "Route": "tabs/admin/view-users.html.gz",
-      "AssetFile": "C:\\Users\\johnc\\WebProjects\\HyperBean\\obj\\Debug\\net9.0\\compressed\\56d55mv937-1d8q47j2j9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1100"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Jul 2025 10:14:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-p1uz+ntef4yHH2pfZZsZS14O7P23zkqAGf3r3hYC8O8="
+          "Value": "sha256-wQU4qC7/sZe2/XZeGZ3bFLZvHTgxE53vQdOIvZQ+Eco="
         }
       ]
     }

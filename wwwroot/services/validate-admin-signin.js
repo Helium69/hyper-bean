@@ -1,4 +1,4 @@
-export async function validateAdminSignin(){
+async function validateAdminSignin(){
     const response = await fetch ("/admin/authorize-signin", {
         method : "GET",
         credentials : "include"
@@ -11,3 +11,9 @@ export async function validateAdminSignin(){
         window.location.href = "signin.html";
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", async () => {
+    await validateAdminSignin();
+    return;
+});

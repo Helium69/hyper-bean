@@ -6,16 +6,16 @@ namespace HyperBean.Services.AdminServices
 {
     class AdminDB
     {
-        public async Task InitiateDB()
+        private async Task InitiateDB()
         {
-            using (var connection = new SqliteConnection($"Data Source={Filename.DB}"))
+            using (var connection = new SqliteConnection($"Data Source={Filename.AdminDB}"))
             {
                 await connection.OpenAsync();
 
                 using (var command = connection.CreateCommand())
                 {
                     command.CommandText = $@"
-                        CREATE TABLE IF NOT EXISTS {Filename.Table} (
+                        CREATE TABLE IF NOT EXISTS {Filename.AdminTable} (
                         username NOT NULL,
                         password NOT NULL
                         )
@@ -31,13 +31,13 @@ namespace HyperBean.Services.AdminServices
             Admin admin = new Admin();
             await InitiateDB();
 
-            using (var connection = new SqliteConnection($"Data Source={Filename.DB}"))
+            using (var connection = new SqliteConnection($"Data Source={Filename.AdminDB}"))
             {
                 await connection.OpenAsync();
 
                 using (var command = connection.CreateCommand())
                 {
-                    command.CommandText = $"SELECT * FROM {Filename.Table}";
+                    command.CommandText = $"SELECT * FROM {Filename.AdminTable}";
 
                     using (var reader = await command.ExecuteReaderAsync())
                     {
@@ -70,13 +70,13 @@ namespace HyperBean.Services.AdminServices
 
             string password = BCrypt.Net.BCrypt.HashPassword(pass);
 
-            using (var connection = new SqliteConnection($"Data Source={Filename.DB}"))
+            using (var connection = new SqliteConnection($"Data Source={Filename.AdminDB}"))
             {
                 connection.Open();
 
                 using (var command = connection.CreateCommand())
                 {
-                    command.CommandText = $"INSERT INTO {Filename.Table} (username, password) VALUES (@username, @password)";
+                    command.CommandText = $"INSERT INTO {Filename.AdminTable} (username, password) VALUES (@username, @password)";
 
                     command.Parameters.AddWithValue("@username", username);
                     command.Parameters.AddWithValue("@password", password);

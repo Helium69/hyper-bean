@@ -8,6 +8,7 @@ namespace HyperBean.Models
         public double? Medium { get; set; }
         public double? Large { get; set; }
         public bool? IsAvailable { get; set; }
+        public string? URL { get; set; }
 
         // Error List
 
@@ -30,8 +31,9 @@ namespace HyperBean.Models
             }
 
             // check values if valid and within expected values only
-
             // check name
+
+            
             if (string.IsNullOrWhiteSpace(Name))
             {
                 error_list.Add("Name should not be empty");
@@ -59,33 +61,33 @@ namespace HyperBean.Models
             // check medium price
             if (Medium > 1000)
             {
-
+                error_list.Add("Medium size price should not exceed more than 1000 pesos");
             }
             else if (Medium <= 0)
             {
-
+                error_list.Add("Medium size price should not exceed lower or equal than 0 pesos");
             }
 
             // check large price
             if (Large > 1000)
             {
-
+                error_list.Add("Large size price should not exceed more than 1000 pesos");
             }
             else if (Large <= 0)
             {
-
+                error_list.Add("Large size price should not exceed lower or equal than 0 pesos");
             }
 
             // price comparison - small -> medium -> large
 
             if (Small > Medium || Small > Large)
             {
-
+                error_list.Add("Small size price should not exceed medium or large size prices");
             }
 
             if (Medium > Large)
             {
-
+                error_list.Add("Medium size price should not exceed larger size price");
             }
 
             if (error_list.Any()) return false;

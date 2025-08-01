@@ -48,45 +48,45 @@
 
 
         <!-- Main Content -->
-    <main class="flex-grow p-10">
-        <div class="max-w-xl mx-auto space-y-6">
+        <main class="flex-grow p-10">
+            <div class="max-w-xl mx-auto space-y-6">
 
-            <!-- Form Toggle Buttons -->
-            <div class="flex gap-4">
-            <button id="showCoffeeFormBtn" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded font-semibold text-black">
-                Add Coffee
-            </button>
-            <button id="showAddonFormBtn" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded font-semibold text-black">
-                Add Add-on
-            </button>
-            </div>
-
-            <!-- Coffee Form -->
-            <form id="coffeeForm" class="space-y-4">
-                <h2 class="text-xl font-bold">Coffee Details</h2>
-                <input type="text" placeholder="Coffee Name" class="w-full px-4 py-2 rounded text-black" />
-                <input type="number" placeholder="Small Price" class="w-full px-4 py-2 rounded text-black" />
-                <input type="number" placeholder="Medium Price" class="w-full px-4 py-2 rounded text-black" />
-                <input type="number" placeholder="Large Price" class="w-full px-4 py-2 rounded text-black" />
-                <input type="text" placeholder="Image URL" class="w-full px-4 py-2 rounded text-black" />
-                <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white py-2 rounded">
-                    Save Coffee
+                <!-- Form Toggle Buttons -->
+                <div class="flex gap-4">
+                <button id="showCoffeeFormBtn" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded font-semibold text-black">
+                    Add Coffee
                 </button>
-            </form>
+                <button id="showAddonFormBtn" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded font-semibold text-black">
+                    Add Add-on
+                </button>
+                </div>
 
-            <!-- Add-on Form -->
-            <form id="addonForm" class="space-y-4 hidden">
-            <h2 class="text-xl font-bold">Add-on Details</h2>
-            <input type="text" placeholder="Add-on Name" class="w-full px-4 py-2 rounded text-black" />
-            <input type="number" placeholder="Price" class="w-full px-4 py-2 rounded text-black" />
-            <input type="text" placeholder="Image URL" class="w-full px-4 py-2 rounded text-black" />
-            <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white py-2 rounded">
-                Save Add-on
-            </button>
-            </form>
+                <!-- Coffee Form -->
+                <form id="coffee-form" class="space-y-4">
+                    <h2 class="text-xl font-bold">Coffee Details</h2>
+                    <input id="coffee-name" type="text" placeholder="Coffee Name" class="w-full px-4 py-2 rounded text-black" />
+                    <input id="coffee-small" type="number" placeholder="Small Price" class="w-full px-4 py-2 rounded text-black" />
+                    <input id="coffee-medium" type="number" placeholder="Medium Price" class="w-full px-4 py-2 rounded text-black" />
+                    <input id="coffee-large" type="number" placeholder="Large Price" class="w-full px-4 py-2 rounded text-black" />
+                    <input id="coffee-url" type="text" placeholder="Image URL" class="w-full px-4 py-2 rounded text-black" />
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white py-2 rounded">
+                        Save Coffee
+                    </button>
+                </form>
 
-        </div>
-    </main>
+                <!-- Add-on Form -->
+                <form id="addon-form" class="space-y-4 hidden">
+                <h2 class="text-xl font-bold">Add-on Details</h2>
+                <input id="addon-name" type="text" placeholder="Add-on Name" class="w-full px-4 py-2 rounded text-black" />
+                <input id="addon-price" type="number" placeholder="Price" class="w-full px-4 py-2 rounded text-black" />
+                <input id="addon-url" type="text" placeholder="Image URL" class="w-full px-4 py-2 rounded text-black" />
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white py-2 rounded">
+                    Save Add-on
+                </button>
+                </form>
+
+            </div>
+        </main>
 
     </div>
 
@@ -97,7 +97,8 @@
 
     <!-- Toggle Script -->
     <script src="../../services/sidebar.js"> </script>
-    <script src="../../services/main-services/add-product-service.js"> </script>
+    <script type="module" src="../../services/main-services/add-product-service.js"> </script>
+    <script src="../../services/validate-admin-signin.js"></script>
     
 
 

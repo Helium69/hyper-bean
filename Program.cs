@@ -24,4 +24,10 @@ app.MapGet("/admin/authorize-signin", (HttpContext context) =>
     return response.IsAdminSessionActive(context);
 });
 
+app.MapPost("/admin/insert-coffee", async (HttpContext context) =>
+{
+    ProductEndpoints response = new ProductEndpoints();
+    return await response.InsertCoffee(context);
+});
+
 app.Run();

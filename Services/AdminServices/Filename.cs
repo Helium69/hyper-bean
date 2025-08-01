@@ -3,7 +3,14 @@ namespace HyperBean.Services.AdminServices
     // use this for consistent naming
     class Filename
     {
-        public static string DB = "admin.db";
-        public static string Table = "admin";
+        // admin
+        public static string AdminDB = "admin.db";
+        public static string AdminTable = "admin";
+
+        // coffee & addon
+        public static string CoffeeDB = "coffee.db";
+        public static string CoffeeTable = "coffee";
+        public static string AddOn = "addon";
+
     }
 }

@@ -14,12 +14,12 @@
         <form id="admin-signin" class="space-y-4">
             <div>
                 <label for="username" class="block text-sm mb-1">Username</label>
-                <input type="text" id="admin-username" name="username" class="w-full px-3 py-2 bg-[#3E1A0F] text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                <input type="text" id="admin-username" name="username" placeholder="Admin Username" class="w-full px-3 py-2 bg-[#3E1A0F] text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400">
             </div>
 
             <div>
                 <label for="password" class="block text-sm mb-1">Password</label>
-                <input type="password" id="admin-password" name="password" class="w-full px-3 py-2 bg-[#3E1A0F] text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                <input type="password" id="admin-password" name="password" placeholder="Admin Password" class="w-full px-3 py-2 bg-[#3E1A0F] text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400">
             </div>
 
             <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-2 rounded transition">Sign In</button>
@@ -27,8 +27,6 @@
     </div>
 
     <div id="toast-container" class="fixed top-4 right-4 z-50 space-y-2"></div>
-
-    
 
     <script type="module" src="../../services/main-services/signin.js"></script>
 
