@@ -1,12 +1,13 @@
 using HyperBean.Services.AdminServices;
 using Microsoft.Data.Sqlite;
 using HyperBean.Models;
+using System.ComponentModel;
 
 namespace HyperBean.Services
 {
     class CoffeeDB
     {
-        private void InitiateDB()
+        private void InitiateCoffee()
         {
             using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
             {
@@ -32,7 +33,7 @@ namespace HyperBean.Services
 
         public void InsertCoffee(Coffee coffee)
         {
-            InitiateDB();
+            InitiateCoffee();
 
             using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
             {
@@ -64,7 +65,7 @@ namespace HyperBean.Services
             List<Coffee> coffee_list = new List<Coffee>();
 
 
-            InitiateDB();
+            InitiateCoffee();
             using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
             {
                 connection.Open();
@@ -78,17 +79,102 @@ namespace HyperBean.Services
                         {
                             Coffee coffee = new Coffee();
                             coffee.Name = reader["name"].ToString();
-                            coffee.Small = Convert.ToInt32(reader["small"]);
-                            coffee.Medium = Convert.ToInt32(reader["medium"]);
-                            coffee.Large = Convert.ToInt32(reader["large"]);
+                            coffee.Small = Convert.ToDouble(reader["small"]);
+                            coffee.Medium = Convert.ToDouble(reader["medium"]);
+                            coffee.Large = Convert.ToDouble(reader["large"]);
                             coffee.IsAvailable = Convert.ToInt32(reader["is_available"]) == 1;
                             coffee.URL = reader["url"].ToString();
+                            coffee.ID = Convert.ToInt32(reader["id"]);
                         }
                     }
                 }
             }
 
             return coffee_list;
+        }
+
+
+        public void InitiateAddon()
+        {
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        CREATE TABLE IF NOT EXISTS {Filename.AddonTable} (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT NOT NULL UNIQUE,
+                        price REAL NOT NULL,
+                        url TEXT NOT NULL,
+                        is_available INTEGER NOT NULL
+                        );";
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
+        public void InsertAddon(Addon addon)
+        {
+            InitiateAddon();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        INSERT INTO {Filename.AddonTable} (name, url, price, is_available) 
+                        VALUES (@name, @url, @price, @is_available)";
+
+                    command.Parameters.AddWithValue("@name", addon.Name);
+                    command.Parameters.AddWithValue("@url", addon.URL);
+                    command.Parameters.AddWithValue("@price", addon.Price);
+                    command.Parameters.AddWithValue("@is_available", addon.IsAvailable);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
+        public List<Addon> GetAddon()
+        {
+            List<Addon> addon_list = new List<Addon>();
+
+            InitiateAddon();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"SELECT * FROM {Filename.AddonTable}";
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Addon addon = new Addon();
+
+                            addon.Name = reader["name"].ToString();
+                            addon.Price = Convert.ToDouble(reader["price"]);
+                            addon.URL = reader["url"].ToString();
+                            addon.ID = Convert.ToInt32(reader["id"]);
+                            addon.IsAvailable = Convert.ToInt32(reader["id"]) == 1;
+                        }
+                    }
+                }
+            }
+
+            return addon_list;
         }
     }
 }

@@ -30,4 +30,11 @@ app.MapPost("/admin/insert-coffee", async (HttpContext context) =>
     return await response.InsertCoffee(context);
 });
 
+app.MapPost("/admin/insert-addon", async (HttpContext context) =>
+{
+    ProductEndpoints response = new ProductEndpoints();
+    return await response.InsertAddOn(context);
+});
+
+
 app.Run();

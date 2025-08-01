@@ -3,6 +3,7 @@ namespace HyperBean.Models
     class Coffee
     {
         // Coffee fields
+        public int ID { get; set; }
         public string? Name { get; set; }
         public double? Small { get; set; }
         public double? Medium { get; set; }
@@ -23,17 +24,19 @@ namespace HyperBean.Models
 
         public bool IsValuesValid()
         {
-            // check if a value is null
-            if (Name is null || Small is null || Medium is null || Large is null || IsAvailable is null)
+            if (IsAvailable is null)
             {
-                error_list.Add("Null value/s detected, data might be corrupted");
-                return false;
+                error_list.Add("Default value for coffee status is required");
             }
 
+            if (string.IsNullOrWhiteSpace(URL))
+            {
+                error_list.Add("URL image link should not be empty");
+            }
             // check values if valid and within expected values only
             // check name
 
-            
+
             if (string.IsNullOrWhiteSpace(Name))
             {
                 error_list.Add("Name should not be empty");
@@ -49,7 +52,10 @@ namespace HyperBean.Models
 
 
             // check small price
-            if (Small > 1000)
+            if (Small is null) {
+                error_list.Add("Small size should not be empty");
+            }
+            else if (Small > 1000)
             {
                 error_list.Add("Small size price should not exceed more than 1000 pesos");
             }
@@ -59,7 +65,11 @@ namespace HyperBean.Models
             }
 
             // check medium price
-            if (Medium > 1000)
+            if (Medium is null)
+            {
+                error_list.Add("Medium size should not be empty");
+            }
+            else if (Medium > 1000)
             {
                 error_list.Add("Medium size price should not exceed more than 1000 pesos");
             }
@@ -69,7 +79,11 @@ namespace HyperBean.Models
             }
 
             // check large price
-            if (Large > 1000)
+            if (Large is null)
+            {
+                error_list.Add("Large size should not be empty");
+            }
+            else if (Large > 1000)
             {
                 error_list.Add("Large size price should not exceed more than 1000 pesos");
             }
