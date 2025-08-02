@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f4e46eos3t</Fingerprint>
-      <Integrity>f16R+PRRvKYeiRmiqLDTsJ3KInphanGqlUPUWlv5nMU=</Integrity>
+      <Fingerprint>m25df6oe5n</Fingerprint>
+      <Integrity>7qHr9TfnwcooTNWjCb15/kssZsabGdAHPHvz+Kgj6T8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\services\main-services\view-product-service.js'))</OriginalItemSpec>

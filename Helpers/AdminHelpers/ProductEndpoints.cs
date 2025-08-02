@@ -6,6 +6,12 @@ namespace HyperBean.Helpers.AdminHelpers
 {
     class ProductEndpoints
     {
+        // i know i know, the task<result> might have been useless already because i did not async those db services
+        // but i think i rather finish this project first since vacation is almost over and i would take note to not forgot that in
+        // other projects, and maybe make sure to master topics that relates to async because 1 day of learning it was definitely
+        // enough
+
+
         public async Task<IResult> InsertCoffee(HttpContext context)
         {
             ResponseAPI<string> response = new ResponseAPI<string>();
@@ -113,7 +119,68 @@ namespace HyperBean.Helpers.AdminHelpers
 
             response.Message = "Success";
             return Results.Json(response, statusCode: 201);
-            
+
+        }
+
+        public IResult GetAddon()
+        {
+            List<Addon> result;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            CoffeeDB service = new CoffeeDB();
+
+            try
+            {
+                result = service.GetAddon();
+            }
+            catch (Exception)
+            {
+                response.Message = "Data convertion problem, something went wrong from db";
+                return Results.Json(response, statusCode: 500);
+            }
+
+            if (result is null || result.Count() == 0)
+            {
+                response.Message = "No data has been saved to database yet";
+                return Results.Json(response, statusCode: 200);
+            }
+
+            ResponseAPI<List<Addon>> data = new ResponseAPI<List<Addon>>();
+            data.Message = "Success";
+            data.Data = result;
+
+            return Results.Json(data, statusCode: 200);
+        }
+
+        public IResult GetCoffee()
+        {
+            List<Coffee> result;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            CoffeeDB service = new CoffeeDB();
+
+            try
+            {
+                result = service.GetCoffee();
+            }
+            catch (Exception)
+            {
+                response.Message = "Data convertion problem, something went wrong from db";
+                return Results.Json(response, statusCode: 500);
+            }
+
+            if (result is null || result.Count() == 0)
+            {
+                response.Message = "No data has been saved to database yet";
+                return Results.Json(response, statusCode: 200);
+            }
+
+            ResponseAPI<List<Coffee>> data = new ResponseAPI<List<Coffee>>();
+            data.Message = "Success";
+            data.Data = result;
+
+            return Results.Json(data, statusCode: 200);
+
         }
     }
 }

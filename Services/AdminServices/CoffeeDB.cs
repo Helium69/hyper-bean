@@ -85,6 +85,8 @@ namespace HyperBean.Services
                             coffee.IsAvailable = Convert.ToInt32(reader["is_available"]) == 1;
                             coffee.URL = reader["url"].ToString();
                             coffee.ID = Convert.ToInt32(reader["id"]);
+
+                            coffee_list.Add(coffee);
                         }
                     }
                 }
@@ -92,6 +94,52 @@ namespace HyperBean.Services
 
             return coffee_list;
         }
+
+        public bool UpdateCoffeeAvailability(Coffee coffee)
+        {
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        UPDATE {Filename.CoffeeTable}
+                        SET is_available = @is_available
+                        WHERE name = @name;
+                    ";
+
+                    int converted_status = (bool) coffee.IsAvailable! ? 1 : 0;
+
+                    command.Parameters.AddWithValue("@name", coffee.Name);
+                    command.Parameters.AddWithValue("@is_available", converted_status);
+
+                    int change_count = command.ExecuteNonQuery();
+
+                    if (change_count != 0) return true;
+
+                    return false;
+                }
+            }
+        }
+
+        public void DeleteCoffee(Coffee coffee)
+        {
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"DELETE FROM {Filename.CoffeeTable} WHERE name = @name;";
+                    command.Parameters.AddWithValue("@name", coffee.Name);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        // THIS PART BELOW IS ONLY ADD ON
 
 
         public void InitiateAddon()
@@ -115,8 +163,6 @@ namespace HyperBean.Services
                 }
             }
         }
-
-
 
         public void InsertAddon(Addon addon)
         {
@@ -169,6 +215,8 @@ namespace HyperBean.Services
                             addon.URL = reader["url"].ToString();
                             addon.ID = Convert.ToInt32(reader["id"]);
                             addon.IsAvailable = Convert.ToInt32(reader["id"]) == 1;
+
+                            addon_list.Add(addon);
                         }
                     }
                 }
@@ -176,5 +224,7 @@ namespace HyperBean.Services
 
             return addon_list;
         }
+
+        
     }
 }

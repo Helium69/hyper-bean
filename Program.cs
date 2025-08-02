@@ -36,5 +36,27 @@ app.MapPost("/admin/insert-addon", async (HttpContext context) =>
     return await response.InsertAddOn(context);
 });
 
+app.MapGet("/admin/get-coffee", (HttpContext context) =>
+{
+    ProductEndpoints response = new ProductEndpoints();
+    return response.GetCoffee();
+});
+
+app.MapGet("/admin/get-addon", (HttpContext context) =>
+{
+    ProductEndpoints response = new ProductEndpoints();
+    return response.GetAddon();
+});
+
+app.MapPost("admin/delete-coffee", async (HttpContext context) =>
+{
+
+});
+
+app.MapPost("admin/update-coffee-status", async (HttpContext context) =>
+{
+
+});
+
 
 app.Run();
