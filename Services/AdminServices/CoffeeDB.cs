@@ -64,8 +64,8 @@ namespace HyperBean.Services
         {
             List<Coffee> coffee_list = new List<Coffee>();
 
-
             InitiateCoffee();
+
             using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
             {
                 connection.Open();
@@ -95,8 +95,14 @@ namespace HyperBean.Services
             return coffee_list;
         }
 
-        public bool UpdateCoffeeAvailability(Coffee coffee)
+        public bool UpdateCoffee(Coffee coffee)
         {
+            InitiateCoffee();
+
+            // flips value for status update, if false then true (1), if true then false (0)
+            int updated_value = (bool)coffee.IsAvailable! ? 0 : 1;
+
+
             using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
             {
                 connection.Open();
@@ -109,10 +115,8 @@ namespace HyperBean.Services
                         WHERE name = @name;
                     ";
 
-                    int converted_status = (bool) coffee.IsAvailable! ? 1 : 0;
-
                     command.Parameters.AddWithValue("@name", coffee.Name);
-                    command.Parameters.AddWithValue("@is_available", converted_status);
+                    command.Parameters.AddWithValue("@is_available", updated_value);
 
                     int change_count = command.ExecuteNonQuery();
 
@@ -123,8 +127,10 @@ namespace HyperBean.Services
             }
         }
 
-        public void DeleteCoffee(Coffee coffee)
+        public bool DeleteCoffee(Coffee coffee)
         {
+            InitiateCoffee();
+
             using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
             {
                 connection.Open();
@@ -134,7 +140,11 @@ namespace HyperBean.Services
                     command.CommandText = $"DELETE FROM {Filename.CoffeeTable} WHERE name = @name;";
                     command.Parameters.AddWithValue("@name", coffee.Name);
 
-                    command.ExecuteNonQuery();
+                    int change_count = command.ExecuteNonQuery();
+
+                    if (change_count != 0) return true;
+
+                    return false;
                 }
             }
         }
@@ -214,7 +224,7 @@ namespace HyperBean.Services
                             addon.Price = Convert.ToDouble(reader["price"]);
                             addon.URL = reader["url"].ToString();
                             addon.ID = Convert.ToInt32(reader["id"]);
-                            addon.IsAvailable = Convert.ToInt32(reader["id"]) == 1;
+                            addon.IsAvailable = Convert.ToInt32(reader["is_available"]) == 1;
 
                             addon_list.Add(addon);
                         }
@@ -223,6 +233,61 @@ namespace HyperBean.Services
             }
 
             return addon_list;
+        }
+
+        public bool DeleteAddon(Addon addon)
+        {
+            InitiateCoffee();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"DELETE FROM {Filename.AddonTable} WHERE name = @name;";
+                    command.Parameters.AddWithValue("@name", addon.Name);
+
+                    int change_count = command.ExecuteNonQuery();
+
+                    if (change_count != 0) return true;
+
+                    return false;
+                }
+            }
+        }
+        
+
+        public bool UpdateAddon(Addon addon)
+        {
+            InitiateCoffee();
+
+            // flips value for status update, if false then true (1), if true then false (0)
+            int updated_value = (bool)addon.IsAvailable! ? 0 : 1;
+
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())   
+                {
+                    command.CommandText = $@"
+                        UPDATE {Filename.AddonTable}
+                        SET is_available = @is_available
+                        WHERE name = @name;
+                    ";
+
+                    command.Parameters.AddWithValue("@name", addon.Name);
+                    command.Parameters.AddWithValue("@is_available", updated_value);
+
+                    int change_count = command.ExecuteNonQuery();
+
+                    if (change_count != 0) return true;
+
+                    return false;
+                }
+            }
         }
 
         

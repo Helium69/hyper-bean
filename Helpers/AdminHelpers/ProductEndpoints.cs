@@ -182,5 +182,165 @@ namespace HyperBean.Helpers.AdminHelpers
             return Results.Json(data, statusCode: 200);
 
         }
+
+        public async Task<IResult> DeleteAddon(HttpContext context)
+        {
+            Addon? addon;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                addon = await context.Request.ReadFromJsonAsync<Addon>();
+
+            }
+            catch (Exception)
+            {
+                response.Message = "Data deserialization failed, data might be corrupted";
+
+                Console.WriteLine("[DEBUG] data might be corrupted");
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            if (addon is null)
+            {
+                response.Message = "Data deserialization failed, data might be corrupted";
+
+                Console.WriteLine("[DEBUG] value is null might be corrupted");
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            CoffeeDB service = new CoffeeDB();
+
+            if (!service.DeleteAddon(addon))
+            {
+                Console.WriteLine("[DEBUG] failed to delete");
+                response.Message = "Failed to delete";
+                return Results.Json(response.Message, statusCode: 500);
+            }
+
+            Console.WriteLine("[DEBUG] success");
+            response.Message = "Success";
+            return Results.Json(response.Message, statusCode: 200);
+        }
+
+        public async Task<IResult> DeleteCoffee(HttpContext context)
+        {
+            Coffee? coffee;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                coffee = await context.Request.ReadFromJsonAsync<Coffee>();
+
+            }
+            catch (Exception)
+            {
+                response.Message = "Data deserialization failed, data might be corrupted";
+
+                Console.WriteLine("[DEBUG] data might be corrupted");
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            if (coffee is null)
+            {
+                response.Message = "Data deserialization failed, data might be corrupted";
+
+                Console.WriteLine("[DEBUG] value is null might be corrupted");
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            CoffeeDB service = new CoffeeDB();
+
+            if (!service.DeleteCoffee(coffee))
+            {
+                Console.WriteLine("[DEBUG] failed to delete");
+                response.Message = "Failed to delete";
+                return Results.Json(response.Message, statusCode: 500);
+            }
+
+            Console.WriteLine("[DEBUG] success");
+            response.Message = "Success";
+            return Results.Json(response.Message, statusCode: 200);
+        }
+
+        public async Task<IResult> UpdateCoffeeStatus(HttpContext context)
+        {
+            Coffee? coffee;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                coffee = await context.Request.ReadFromJsonAsync<Coffee>();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("[DEBUG] corrupt 1");
+                response.Message = "Data deserialization failed, data might be corrupted";
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            if (coffee is null)
+            {
+                Console.WriteLine("[DEBUG] corrupt 2");
+                response.Message = "Data deserialization failed, data might be corrupted";
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            Console.WriteLine($"[DEBUG] Incoming Addon: Name = {coffee.Name}, IsAvailable = {coffee.IsAvailable}");
+            CoffeeDB service = new CoffeeDB();
+
+            if (!service.UpdateCoffee(coffee))
+            {
+                Console.WriteLine("[DEBUG] db failed");
+                response.Message = "Failed to update";
+                return Results.Json(response.Message, statusCode: 500);
+            }
+
+
+            Console.WriteLine("[DEBUG] success");
+            response.Message = "Success";
+            return Results.Json(response.Message, statusCode: 200);
+        }
+        
+        public async Task<IResult> UpdateAddonStatus(HttpContext context)
+        {
+            Addon? addon;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                addon = await context.Request.ReadFromJsonAsync<Addon>();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("[DEBUG] corrupt 1");
+                response.Message = "Data deserialization failed, data might be corrupted";
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            if (addon is null)
+            {
+                Console.WriteLine("[DEBUG] corrupt 2");
+                response.Message = "Data deserialization failed, data might be corrupted";
+                return Results.Json(response.Message, statusCode: 400);
+            }
+
+            Console.WriteLine($"[DEBUG] Incoming Addon: Name = {addon.Name}, IsAvailable = {addon.IsAvailable}");
+
+
+            CoffeeDB service = new CoffeeDB();
+
+            if (!service.UpdateAddon(addon))
+            {
+                Console.WriteLine("[DEBUG] failed db");
+                response.Message = "Failed to update";
+                return Results.Json(response.Message, statusCode: 500);
+            }
+
+            
+            Console.WriteLine("[DEBUG] success for update");
+            response.Message = "success";
+            return Results.Json(response.Message, statusCode: 200);
+        }
     }
 }
