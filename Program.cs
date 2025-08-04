@@ -1,5 +1,6 @@
 using HyperBean.Services.AdminServices;
 using HyperBean.Helpers.AdminHelpers;
+using HyperBean.Helpers.UserHelpers;
 using HyperBean.Models;
 
 
@@ -70,6 +71,14 @@ app.MapPost("/admin/update-addon", async (HttpContext context) =>
 {
     ProductEndpoints service = new ProductEndpoints();
     return await service.UpdateAddonStatus(context);
+});
+
+// USER ENDPOINTS
+
+app.MapPost("/user/insert-user", async (HttpContext context) =>
+{
+    UserEndpoints service = new UserEndpoints();
+    return await service.InsertUser(context);
 });
 
 

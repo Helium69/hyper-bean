@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Home</title>
+    <link href="../../styles/output.css" rel="stylesheet" />
+    <style>
+        html, body {
+        height: 100%;
+        overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-[#4B1F0E] text-white font-sans flex flex-col h-full">
+
+    <!-- Toast -->  
+    <div id="toast-container" class="fixed top-4 right-4 z-50 space-y-2"></div>
+
+    <!-- Header -->
+    <header class="bg-[#3A170C] shadow-md py-4 px-6 sticky top-0 z-40">
+        <div class="relative flex items-center justify-center">
+        <h1 class="absolute left-0 text-xl sm:text-2xl font-bold text-white">Coffee App</h1>
+        <span class="text-lg sm:text-xl font-bold text-yellow-300">Home</span>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex flex-grow overflow-hidden">
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-transition w-16 p-2 bg-[#2b1008] overflow-hidden">
+        <div class="mb-6">
+            <button id="toggleBtn" class="bg-[#3E1A0F] px-3 py-2 rounded hover:bg-[#5A2A1C] transition text-lg font-bold">
+            ☰
+            </button>
+        </div>
+        <nav class="space-y-2" id="sidebarLinks">
+            <a href="home.html" class="block px-4 py-2 rounded bg-[#3E1A0F] border-l-4 border-yellow-400 font-semibold shadow-md">
+            🏠 <span class="inline-block ml-2 hidden">Home</span>
+            </a>
+            <a href="order.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
+            ☕ <span class="inline-block ml-2 hidden">Buy Coffee</span>
+            </a>
+            <a href="about.html" class="block px-4 py-2 rounded hover:bg-[#5A2A1C] transition">
+            ℹ️ <span class="inline-block ml-2 hidden">About Us</span>
+            </a>
+            <a href="#" class="block px-4 py-2 rounded bg-[#8B1E1E] hover:bg-red-700 transition font-semibold">
+            🚪 <span class="inline-block ml-2 hidden">Logout</span>
+            </a>
+        </nav>
+        </aside>
+
+        <!-- Main Section -->
+        <main class="flex-grow p-6 flex flex-col sm:flex-row gap-6 overflow-hidden">
+
+        <!-- Left: Profile -->
+        <section class="w-full sm:w-1/2 bg-[#3A170C] p-6 rounded-lg shadow-md border border-[#60311D] flex flex-col items-center">
+            <img src="https://www.bing.com/th/id/OGC.5bc4cc8b49ffecf017f06a4eff8a294a?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia1.tenor.com%2fm%2fvica-MccatUAAAAC%2ffabulous-beasts-tuye.gif&ehk=xJqp0ltm%2bwPwuSV9jIqsQghO%2bmah65ZAXXgtxCxanI4%3d" alt="Profile" class="w-32 h-32 rounded-full mb-4 border-4 border-yellow-300 shadow-md" />
+            <h2 class="text-2xl font-bold text-yellow-300 mb-6">User Profile</h2>
+            <div class="w-full space-y-3 text-lg">
+            <p><span class="font-semibold">Name:</span> John Doe</p>
+            <p><span class="font-semibold">Sex:</span> Male</p>
+            <p><span class="font-semibold">Birthdate:</span> 2000-01-01</p>
+            <p><span class="font-semibold">Username:</span> johndoe99</p>
+            <p><span class="font-semibold">Total Balance:</span> <span class="text-green-400">₱120.00</span></p>
+            </div>
+            <button class="mt-6 bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold transition">
+            Add Funds
+            </button>
+        </section>
+
+        <!-- Right: Transaction History -->
+        <section class="w-full sm:w-1/2 bg-[#3A170C] p-6 rounded-lg shadow-md border border-[#60311D] flex flex-col overflow-hidden">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-300">Transaction History</h2>
+            <div class="flex-grow overflow-y-auto pr-2 space-y-3">
+            <!-- Transaction Card -->
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
+            </div>
+
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
+            </div>
+
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
+            </div>
+
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
+            </div>
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
+            </div>
+
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
+            </div>
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
+            </div>
+
+            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
+                <div class="flex justify-between text-sm sm:text-base">
+                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
+                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
+            </div>
+
+            <!-- Add more as needed -->
+            </div>
+        </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#3A170C] text-sm text-center py-4">
+        <p>&copy; 2025 HyperBean App. All rights reserved.</p>
+    </footer>
+
+    <!-- Sidebar Toggle Script -->
+    <script src="../../services/sidebar.js"></script>
+</body>
+</html>
