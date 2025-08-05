@@ -1,5 +1,6 @@
 using Microsoft.Data.Sqlite;
 using HyperBean.Models;
+using BCrypt.Net;
 
 namespace HyperBean.Services.UserServices
 {
@@ -44,13 +45,13 @@ namespace HyperBean.Services.UserServices
                     using (var command = connection.CreateCommand())
                     {
                         command.CommandText = $@"
-                            INSERT INTO (name, username, password, sex, birth_date, user_balance, is_active, url)
+                            INSERT INTO {Filename.UserTable} (name, username, password, sex, birth_date, user_balance, is_active, url)
                             VALUES (@name, @username, @password, @sex, @birth_date, @user_balance, @is_active, @url)
                         ";
 
                         command.Parameters.AddWithValue("@name", user.Name);
                         command.Parameters.AddWithValue("@username", user.Username);
-                        command.Parameters.AddWithValue("@password", user.Password);
+                        command.Parameters.AddWithValue("@password", BCrypt.Net.BCrypt.HashPassword(user.Password));
                         command.Parameters.AddWithValue("@sex", user.Sex);
                         command.Parameters.AddWithValue("@birth_date", user.BirthDate);
                         command.Parameters.AddWithValue("@user_balance", user.UserBalance);
@@ -62,10 +63,6 @@ namespace HyperBean.Services.UserServices
                 }
             }
             catch (SqliteException ex) when (ex.SqliteErrorCode == 19)
-            {
-                return false;
-            }
-            catch (Exception)
             {
                 return false;
             }
@@ -93,6 +90,7 @@ namespace HyperBean.Services.UserServices
                         {
                             User user = new User();
 
+                            user.ID = Convert.ToInt32(reader["id"]);
                             user.Name = reader["name"].ToString();
                             user.Username = reader["username"].ToString();
                             user.Sex = reader["sex"].ToString();

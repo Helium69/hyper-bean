@@ -31,11 +31,11 @@ namespace HyperBean.Models
         public string? URL { get; set; }
 
         private List<string> error_list = new List<string>();
-        public List<string> ErrorList = new List<string>();
+        public List<string> ErrorList {get { return error_list; }}
 
         public bool IsValuesValid()
         {
-            if (ID is null || Username is null || Password is null || Name is null || Sex is null ||
+            if (Username is null || Password is null || Name is null || Sex is null ||
             BirthDate is null || IsActive is null || UserBalance is null || URL is null)
             {
                 error_list.Add("Null detected, data might be corrupted");

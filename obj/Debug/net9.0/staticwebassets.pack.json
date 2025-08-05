@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\services\\toast.js"
     },
     {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\signup.js",
+      "PackagePath": "staticwebassets\\services\\user-services\\signup.js"
+    },
+    {
       "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js",
       "PackagePath": "staticwebassets\\services\\validate-admin-signin.js"
     },
@@ -51,6 +55,26 @@
     {
       "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\admin\\view-users.html",
       "PackagePath": "staticwebassets\\tabs\\admin\\view-users.html"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\user\\about.html",
+      "PackagePath": "staticwebassets\\tabs\\user\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\user\\home.html",
+      "PackagePath": "staticwebassets\\tabs\\user\\home.html"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\user\\order.html",
+      "PackagePath": "staticwebassets\\tabs\\user\\order.html"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\user\\signin.html",
+      "PackagePath": "staticwebassets\\tabs\\user\\signin.html"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\tabs\\user\\signup.html",
+      "PackagePath": "staticwebassets\\tabs\\user\\signup.html"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.HyperBean.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

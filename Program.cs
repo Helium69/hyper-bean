@@ -49,6 +49,12 @@ app.MapGet("/admin/get-addon", (HttpContext context) =>
     return response.GetAddon();
 });
 
+app.MapGet("/admin/get-users", (HttpContext context) =>
+{
+    UserEndpoints response = new UserEndpoints();
+    return response.GetUsers();
+});
+
 app.MapPost("/admin/delete-coffee", async (HttpContext context) =>
 {
     ProductEndpoints service = new ProductEndpoints();
@@ -79,6 +85,16 @@ app.MapPost("/user/insert-user", async (HttpContext context) =>
 {
     UserEndpoints service = new UserEndpoints();
     return await service.InsertUser(context);
+});
+
+app.MapPost("/user/get-user-account", () =>
+{
+
+});
+
+app.MapGet("/user/validate-user-login", () =>
+{
+
 });
 
 

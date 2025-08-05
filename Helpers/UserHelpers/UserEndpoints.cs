@@ -37,7 +37,8 @@ namespace HyperBean.Helpers.UserHelpers
 
                 errors.Message = "Invalid User Input";
                 errors.Data = user.ErrorList;
-                return Results.Json(response, statusCode: 422);
+
+                return Results.Json(errors, statusCode: 422);
             }
 
             UserDB service = new UserDB();
@@ -54,6 +55,29 @@ namespace HyperBean.Helpers.UserHelpers
 
             response.Message = "Success";
             return Results.Json(response, statusCode: 201);
+        }
+
+        public IResult GetUsers()
+        {
+            UserDB service = new UserDB();
+
+            List<User> user_list;
+
+            try
+            {
+                user_list = service.GetUsers();
+            }
+            catch (Exception)
+            {
+                ResponseAPI<string> error = new ResponseAPI<string>();
+                error.Message = "Something went wrong from the db server";
+                return Results.Json(error, statusCode: 500);
+            }
+
+            ResponseAPI<List<User>> response = new ResponseAPI<List<User>>();
+            response.Message = "Success";
+            response.Data = user_list;
+            return Results.Json(response, statusCode: 200);
         }
     }
 }
