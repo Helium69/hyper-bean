@@ -79,5 +79,58 @@ namespace HyperBean.Helpers.UserHelpers
             response.Data = user_list;
             return Results.Json(response, statusCode: 200);
         }
-    }
+        public async Task<IResult> UpdateStatus(HttpContext context)
+        {
+            User? user;
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                user = await context.Request.ReadFromJsonAsync<User>();
+
+                if (user is null)
+                {
+                    Console.WriteLine("[DEBUG] data is null");
+                    response.Message = "Data received is null, data might be corrupted";
+                    return Results.Json(response, statusCode: 400);
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("[DEBUG] data serialization failed");
+                response.Message = "Data serialization failed, data might be corrupted";
+                return Results.Json(response, statusCode: 400);
+            }
+
+            //find if it exist first and use that instead of this one
+
+            UserDB service = new UserDB();
+
+            User obtained_user;
+            try
+            {
+                obtained_user = service.GetUserAccount((int)user.ID!);
+            }
+            catch (Exception) {
+                Console.WriteLine("[DEBUG] something went wrong from the server");
+                response.Message = "Something went wrong from the server";
+                return Results.Json(response, statusCode: 500);
+            }
+
+
+
+            if (!service.UpdateUserStatus(obtained_user))
+            {
+                Console.WriteLine("[DEBUG] data failed to update");
+                response.Message = "Failed to update user data";
+                return Results.Json(response, statusCode: 500);
+            }
+
+            response.Message = "Success";
+            return Results.Json(response, statusCode: 200);
+
+            
+        }
+
+    }   
 }

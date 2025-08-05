@@ -107,5 +107,70 @@ namespace HyperBean.Services.UserServices
 
             return user_list;
         }
+
+        public bool UpdateUserStatus(User user)
+        {
+            InitiateDB();
+            using (var connection = new SqliteConnection($"Data Source={Filename.UserDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        UPDATE {Filename.UserTable}
+                        SET is_active = @is_active
+                        WHERE id = @id;
+                    ";
+
+                    command.Parameters.AddWithValue("@is_active", (bool)user.IsActive! ? 0 : 1);
+                    command.Parameters.AddWithValue("@id", user.ID);
+
+                    int changes = command.ExecuteNonQuery();
+
+                    if (changes == 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        public User GetUserAccount(int id)
+        {
+            InitiateDB();
+
+
+            User user = new User();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.UserDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"SELECT * FROM {Filename.UserTable} WHERE id = @id";
+
+                    command.Parameters.AddWithValue("@id", id);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            user.ID = Convert.ToInt32(reader["id"]);
+                            user.Name = reader["name"].ToString();
+                            user.Username = reader["username"].ToString();
+                            user.IsActive = Convert.ToInt32(reader["is_active"]) == 1 ? true : false;
+                            user.Sex = reader["sex"].ToString();
+                            user.UserBalance = Convert.ToDouble(reader["user_balance"]);
+                            user.BirthDate = reader["birth_date"].ToString();
+                        }
+                    }
+                }
+            }
+
+            return user;
+        }
     }
 }

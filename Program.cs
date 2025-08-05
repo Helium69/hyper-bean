@@ -79,6 +79,12 @@ app.MapPost("/admin/update-addon", async (HttpContext context) =>
     return await service.UpdateAddonStatus(context);
 });
 
+app.MapGet("/admin/logout", (HttpContext context) =>
+{
+    AdminEndpoints service = new AdminEndpoints();
+    return service.Logout(context);
+});
+
 // USER ENDPOINTS
 
 app.MapPost("/user/insert-user", async (HttpContext context) =>
@@ -95,6 +101,12 @@ app.MapPost("/user/get-user-account", () =>
 app.MapGet("/user/validate-user-login", () =>
 {
 
+});
+
+app.MapPost("/user/update-user-status", async (HttpContext context) =>
+{
+    UserEndpoints service = new UserEndpoints();
+    return await service.UpdateStatus(context);
 });
 
 

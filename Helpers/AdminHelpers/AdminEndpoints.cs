@@ -74,5 +74,23 @@ namespace HyperBean.Helpers.AdminHelpers
             response.Message = "User currently has authorized access";
             return Results.Json(response, statusCode: 200);
         }
+
+        public IResult Logout(HttpContext context)
+        {
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            int? admin_status = context.Session.GetInt32("AdminActive");
+
+            if (admin_status is null || admin_status != 1)
+            {
+                response.Message = "Unauthorized access detected";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            Console.WriteLine("Success");
+            context.Session.Remove("AdminActive");
+            response.Message = "Success";
+            return Results.Json(response, statusCode: 200);
+        }
     }
 }
