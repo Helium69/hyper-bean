@@ -12,14 +12,20 @@ namespace HyperBean.Services.UserServices
             {
                 connection.Open();
 
-                using (var command = connection.CreateCommand())
+                using (var pragmaCommand = connection.CreateCommand())
                 {
-                    command.CommandText = $@"
+                    pragmaCommand.CommandText = "PRAGMA foreign_keys = ON";
+                    pragmaCommand.ExecuteNonQuery();
+                }
+
+                using (var commandUser = connection.CreateCommand())
+                {
+                    commandUser.CommandText = $@"
                         CREATE TABLE IF NOT EXISTS {Filename.UserTable} (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         name TEXT NOT NULL UNIQUE,
                         sex TEXT NOT NULL,
-                        username TEXT NOT NULL,
+                        username TEXT NOT NULL UNIQUE,
                         password TEXT NOT NULL,
                         birth_date TEXT NOT NULL,
                         user_balance REAL NOT NULL,
@@ -27,9 +33,27 @@ namespace HyperBean.Services.UserServices
                         url TEXT NOT NULL);
                     ";
 
-                    command.ExecuteNonQuery();
+                    commandUser.ExecuteNonQuery();
+                }
+
+                using (var commandTransaction = connection.CreateCommand())
+                {
+                    commandTransaction.CommandText = $@"
+                        CREATE TABLE IF NOT EXISTS {Filename.TransactionTable} (
+                        user_id INTEGER NOT NULL,
+                        total_fee REAL NOT NULL,
+                        balance_amount_left REAL NOT NULL,
+                        date TEXT NOT NULL
+
+                        FOREIGN KEY (user_id) REFERENCES {Filename.UserTable}(id) ON DELETE CASCADE
+                        );
+                    ";
+
+                    commandTransaction.ExecuteNonQuery();
                 }
             }
+
+
         }
 
         public bool InsertUser(User user)
@@ -67,6 +91,48 @@ namespace HyperBean.Services.UserServices
                 return false;
             }
 
+            return true;
+        }
+
+        public bool ValidateUserLogin(User user_input, out int? id)
+        {
+            InitiateDB();
+            User user_account = new User();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.UserDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        SELECT password, id FROM {Filename.UserTable}
+                        WHERE username = @username
+                    ";
+
+                    command.Parameters.AddWithValue("@username", user_input.Username);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (!reader.Read())
+                        {
+                            id = null;
+                            return false;
+                        }
+
+                        user_account.Password = reader["password"].ToString();
+                        user_account.ID = Convert.ToInt32(reader["id"]);
+                    }
+                }
+            }
+
+            if (!BCrypt.Net.BCrypt.Verify(user_input.Password, user_account.Password))
+            {
+                id = null;
+                return false;
+            }
+
+            id = user_account.ID;
             return true;
         }
 
@@ -156,7 +222,7 @@ namespace HyperBean.Services.UserServices
 
                     using (var reader = command.ExecuteReader())
                     {
-                        while (reader.Read())
+                        if (reader.Read())
                         {
                             user.ID = Convert.ToInt32(reader["id"]);
                             user.Name = reader["name"].ToString();
@@ -172,5 +238,63 @@ namespace HyperBean.Services.UserServices
 
             return user;
         }
+
+        // Transaction table
+
+        public void InsertTransaction(Transaction transaction)
+        {
+            using (var connection = new SqliteConnection($"Data Source={Filename.TransactionTable}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        INSERT INTO {Filename.TransactionTable} (user_id, total_fee, balance_amount_left, date)
+                        VALUES (@user_id, @total_fee, @balance_amount_left , @date);
+                    ";
+
+                    command.Parameters.AddWithValue("@user_id", transaction.Date);
+                    command.Parameters.AddWithValue("@total_fee", transaction.TotalFee);
+                    command.Parameters.AddWithValue("@balance_amount_left", transaction.BalanceAmountLeft);
+                    command.Parameters.AddWithValue("@date", transaction.Date);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<Transaction> GetTransactions(int id)
+        {
+            List<Transaction> transaction_list = new List<Transaction>();
+            using (var connection = new SqliteConnection($"Data Source={Filename.TransactionTable}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"SELECT * FROM {Filename.TransactionTable} WHERE user_id = @user_id";
+
+                    command.Parameters.AddWithValue("@user_id", id);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Transaction transaction = new Transaction();
+                            transaction.ID = Convert.ToInt32(reader["user_id"]);
+                            transaction.BalanceAmountLeft = Convert.ToDouble(reader["balance_amount_left"]);
+                            transaction.TotalFee = Convert.ToDouble(reader["total_fee"]);
+                            transaction.Date = reader["date"].ToString()!;
+
+                            transaction_list.Add(transaction);
+                        }
+                    }
+                }
+            }
+
+            return transaction_list;
+        }
+
     }
 }

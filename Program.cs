@@ -95,7 +95,8 @@ app.MapPost("/user/insert-user", async (HttpContext context) =>
 
 app.MapPost("/user/get-user-account", () =>
 {
-
+    UserEndpoints service = new UserEndpoints();
+    
 });
 
 app.MapGet("/user/validate-user-login", () =>

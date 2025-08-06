@@ -111,7 +111,8 @@ namespace HyperBean.Helpers.UserHelpers
             {
                 obtained_user = service.GetUserAccount((int)user.ID!);
             }
-            catch (Exception) {
+            catch (Exception)
+            {
                 Console.WriteLine("[DEBUG] something went wrong from the server");
                 response.Message = "Something went wrong from the server";
                 return Results.Json(response, statusCode: 500);
@@ -129,7 +130,49 @@ namespace HyperBean.Helpers.UserHelpers
             response.Message = "Success";
             return Results.Json(response, statusCode: 200);
 
-            
+
+        }
+
+        public async Task<IResult> ValidateUser(HttpContext context)
+        {
+            ResponseAPI<string> response = new ResponseAPI<string>();
+            User? user_input;
+
+            try
+            {
+                user_input = await context.Request.ReadFromJsonAsync<User>();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("[DEBUG] deserialization failed");
+                response.Message = "Data deserialization failed, data might be corrupted";
+                return Results.Json(response, statusCode: 400);
+            }
+
+            if (user_input is null)
+            {
+                Console.WriteLine("[DEBUG] data is null");
+                response.Message = "Data is null, data might be corrupted";
+                return Results.Json(response, statusCode: 400);
+            }
+
+            UserDB service = new UserDB();
+
+            int? user_id;
+
+            if (!service.ValidateUserLogin(user_input, out user_id))
+            {
+                Console.WriteLine("[DEBUG] login failed");
+                response.Message = "Invalid username or password";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            context.Session.SetInt32("UserID", (int)user_id!);
+
+            Console.WriteLine("[DEBUG] success");
+
+            response.Message = "Success";
+            return Results.Json(response, statusCode: 200);
         }
 
     }   
