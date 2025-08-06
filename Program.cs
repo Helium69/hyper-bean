@@ -95,13 +95,20 @@ app.MapPost("/user/insert-user", async (HttpContext context) =>
 
 app.MapPost("/user/get-user-account", () =>
 {
-    UserEndpoints service = new UserEndpoints();
-    
+
+
 });
 
-app.MapGet("/user/validate-user-login", () =>
+app.MapGet("/user/validate-user-session", (HttpContext context) =>
 {
+    UserEndpoints service = new UserEndpoints();
+    return service.ValidateUserSession(context);
+});
 
+app.MapPost("/user/validate-user-login", async (HttpContext context) =>
+{
+    UserEndpoints service = new UserEndpoints();
+    return await service.ValidateUserLogin(context);
 });
 
 app.MapPost("/user/update-user-status", async (HttpContext context) =>

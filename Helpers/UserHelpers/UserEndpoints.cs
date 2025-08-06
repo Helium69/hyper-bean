@@ -133,7 +133,22 @@ namespace HyperBean.Helpers.UserHelpers
 
         }
 
-        public async Task<IResult> ValidateUser(HttpContext context)
+        public IResult ValidateUserSession(HttpContext context)
+        {
+            ResponseAPI<string> response = new ResponseAPI<string>();
+            
+            if (context.Session.GetInt32("UserID") is null)
+            {
+                Console.WriteLine("[DEBUG] unauthorized");
+                response.Message = "Unauthorized access detected";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            response.Message = "Success";
+            return Results.Json(response, statusCode: 200);
+        }
+
+        public async Task<IResult> ValidateUserLogin(HttpContext context)
         {
             ResponseAPI<string> response = new ResponseAPI<string>();
             User? user_input;
@@ -167,6 +182,7 @@ namespace HyperBean.Helpers.UserHelpers
                 return Results.Json(response, statusCode: 401);
             }
 
+            context.Session.Clear();
             context.Session.SetInt32("UserID", (int)user_id!);
 
             Console.WriteLine("[DEBUG] success");

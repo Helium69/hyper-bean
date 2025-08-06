@@ -43,7 +43,7 @@ namespace HyperBean.Services.UserServices
                         user_id INTEGER NOT NULL,
                         total_fee REAL NOT NULL,
                         balance_amount_left REAL NOT NULL,
-                        date TEXT NOT NULL
+                        date TEXT NOT NULL,
 
                         FOREIGN KEY (user_id) REFERENCES {Filename.UserTable}(id) ON DELETE CASCADE
                         );

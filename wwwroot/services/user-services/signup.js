@@ -1,4 +1,4 @@
-
+import * as toastService from "./../toast.js";
 
 document.getElementById("user-signup-form").addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -27,6 +27,19 @@ document.getElementById("user-signup-form").addEventListener("submit", async (e)
 
     const responseData = await response.json();
 
-    debugger;
+
+    if (response.status === 200 || response.status === 201){
+        toastService.showToast("success", responseData.message);
+        return;
+    }
+
+    if (response.status === 422){
+        responseData.data.forEach(error => {
+            toastService.showToast("error", error);
+        });
+        return;
+    }
+
+    toastService.showToast("error", responseData.message);
 
 })

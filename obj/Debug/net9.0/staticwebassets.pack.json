@@ -29,8 +29,28 @@
       "PackagePath": "staticwebassets\\services\\toast.js"
     },
     {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\about-service.js",
+      "PackagePath": "staticwebassets\\services\\user-services\\about-service.js"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\home-service.js",
+      "PackagePath": "staticwebassets\\services\\user-services\\home-service.js"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\order-service.js",
+      "PackagePath": "staticwebassets\\services\\user-services\\order-service.js"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\signin.js",
+      "PackagePath": "staticwebassets\\services\\user-services\\signin.js"
+    },
+    {
       "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\signup.js",
       "PackagePath": "staticwebassets\\services\\user-services\\signup.js"
+    },
+    {
+      "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\user-services\\validate-user-login.js",
+      "PackagePath": "staticwebassets\\services\\user-services\\validate-user-login.js"
     },
     {
       "Id": "C:\\Users\\johnc\\WebProjects\\HyperBean\\wwwroot\\services\\validate-admin-signin.js",
