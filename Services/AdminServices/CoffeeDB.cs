@@ -31,6 +31,40 @@ namespace HyperBean.Services
             }
         }
 
+        public List<Coffee> GetAvailableCoffee()
+        {
+            List<Coffee> coffee_list = new List<Coffee>();
+
+            InitiateCoffee();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"SELECT * FROM {Filename.CoffeeTable} WHERE is_available = 1";
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Coffee coffee = new Coffee();
+                            coffee.Name = reader["name"].ToString();
+                            coffee.Small = Convert.ToDouble(reader["small"]);
+                            coffee.Medium = Convert.ToDouble(reader["medium"]);
+                            coffee.Large = Convert.ToDouble(reader["large"]);
+                            coffee.URL = reader["url"].ToString();
+                            coffee.ID = Convert.ToInt32(reader["id"]);
+
+                            coffee_list.Add(coffee);
+                        }
+                    }
+                }
+            }
+
+            return coffee_list;
+        }
+
         public void InsertCoffee(Coffee coffee)
         {
             InitiateCoffee();
@@ -256,7 +290,7 @@ namespace HyperBean.Services
                 }
             }
         }
-        
+
 
         public bool UpdateAddon(Addon addon)
         {
@@ -270,7 +304,7 @@ namespace HyperBean.Services
             {
                 connection.Open();
 
-                using (var command = connection.CreateCommand())   
+                using (var command = connection.CreateCommand())
                 {
                     command.CommandText = $@"
                         UPDATE {Filename.AddonTable}
@@ -288,6 +322,40 @@ namespace HyperBean.Services
                     return false;
                 }
             }
+        }
+        
+        public List<Addon> GetAvailableAddon()
+        {
+            List<Addon> addon_list = new List<Addon>();
+
+            InitiateAddon();
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $"SELECT * FROM {Filename.AddonTable} WHERE is_available = 1";
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Addon addon = new Addon();
+
+                            addon.Name = reader["name"].ToString();
+                            addon.Price = Convert.ToDouble(reader["price"]);
+                            addon.URL = reader["url"].ToString();
+                            addon.ID = Convert.ToInt32(reader["id"]);
+
+                            addon_list.Add(addon);
+                        }
+                    }
+                }
+            }
+
+            return addon_list;
         }
 
         

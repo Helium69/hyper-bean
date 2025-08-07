@@ -203,7 +203,7 @@ namespace HyperBean.Services.UserServices
             return true;
         }
 
-        public User GetUserAccount(int id)
+        public User? GetUserAccount(int id)
         {
             InitiateDB();
 
@@ -222,16 +222,19 @@ namespace HyperBean.Services.UserServices
 
                     using (var reader = command.ExecuteReader())
                     {
-                        if (reader.Read())
+                        if (!reader.Read())
                         {
-                            user.ID = Convert.ToInt32(reader["id"]);
-                            user.Name = reader["name"].ToString();
-                            user.Username = reader["username"].ToString();
-                            user.IsActive = Convert.ToInt32(reader["is_active"]) == 1 ? true : false;
-                            user.Sex = reader["sex"].ToString();
-                            user.UserBalance = Convert.ToDouble(reader["user_balance"]);
-                            user.BirthDate = reader["birth_date"].ToString();
+                            return null;
                         }
+
+                        user.ID = Convert.ToInt32(reader["id"]);
+                        user.Name = reader["name"].ToString();
+                        user.Username = reader["username"].ToString();
+                        user.IsActive = Convert.ToInt32(reader["is_active"]) == 1 ? true : false;
+                        user.Sex = reader["sex"].ToString();
+                        user.UserBalance = Convert.ToDouble(reader["user_balance"]);
+                        user.BirthDate = reader["birth_date"].ToString();
+                        user.URL = reader["url"].ToString();
                     }
                 }
             }

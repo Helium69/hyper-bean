@@ -301,7 +301,7 @@ namespace HyperBean.Helpers.AdminHelpers
             response.Message = "Success";
             return Results.Json(response.Message, statusCode: 200);
         }
-        
+
         public async Task<IResult> UpdateAddonStatus(HttpContext context)
         {
             Addon? addon;
@@ -337,10 +337,59 @@ namespace HyperBean.Helpers.AdminHelpers
                 return Results.Json(response.Message, statusCode: 500);
             }
 
-            
+
             Console.WriteLine("[DEBUG] success for update");
             response.Message = "success";
             return Results.Json(response.Message, statusCode: 200);
+        }
+
+        public IResult GetAvailableCoffee()
+        {
+            CoffeeDB service = new CoffeeDB();
+            List<Coffee> availableCoffees;
+
+
+            try
+            {
+                availableCoffees = service.GetAvailableCoffee();
+            }
+            catch (Exception)
+            {
+                ResponseAPI<string> error = new ResponseAPI<string>();
+
+                error.Message = "Something went wrong from the server\'s database";
+                return Results.Json(error, statusCode: 500);
+            }
+
+            ResponseAPI<List<Coffee>> response = new ResponseAPI<List<Coffee>>();
+            response.Message = "Success";
+            response.Data = availableCoffees;
+
+            return Results.Json(response, statusCode: 200);
+        }
+
+        public IResult GetAvailableAddOn()
+        {
+            CoffeeDB service = new CoffeeDB();
+            List<Addon> availableAddon;
+
+            try
+            {
+                availableAddon = service.GetAvailableAddon();
+            }
+            catch (Exception)
+            {
+                ResponseAPI<string> error = new ResponseAPI<string>();
+
+                error.Message = "Something went wrong from the server\'s database";
+                return Results.Json(error, statusCode: 500);
+            }
+
+            ResponseAPI<List<Addon>> response = new ResponseAPI<List<Addon>>();
+            response.Message = "Success";
+            response.Data = availableAddon;
+
+            return Results.Json(response, statusCode: 200);
         }
     }
 }

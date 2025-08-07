@@ -93,10 +93,10 @@ app.MapPost("/user/insert-user", async (HttpContext context) =>
     return await service.InsertUser(context);
 });
 
-app.MapPost("/user/get-user-account", () =>
+app.MapGet("/user/get-user-account", (HttpContext context) =>
 {
-
-
+    UserEndpoints service = new UserEndpoints();
+    return service.GetCurrentUser(context);
 });
 
 app.MapGet("/user/validate-user-session", (HttpContext context) =>
@@ -115,6 +115,18 @@ app.MapPost("/user/update-user-status", async (HttpContext context) =>
 {
     UserEndpoints service = new UserEndpoints();
     return await service.UpdateStatus(context);
+});
+
+app.MapGet("/user/get-available-coffee", (HttpContext context) =>
+{
+    ProductEndpoints service = new ProductEndpoints();
+    return service.GetAvailableCoffee();
+});
+
+app.MapGet("/user/get-available-addon", (HttpContext context) =>
+{
+    ProductEndpoints service = new ProductEndpoints();
+    return service.GetAvailableAddOn();
 });
 
 

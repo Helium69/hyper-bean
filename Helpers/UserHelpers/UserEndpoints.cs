@@ -5,6 +5,31 @@ namespace HyperBean.Helpers.UserHelpers
 {
     class UserEndpoints
     {
+        public IResult GetCurrentUser(HttpContext context)
+        {
+            
+            User user;
+
+            int? id = context.Session.GetInt32("UserID");
+
+            if (id is null)
+            {
+                ResponseAPI<string> error = new ResponseAPI<string>();
+                error.Message = "Unauthorized Access Detected";
+                return Results.Json(error, statusCode: 401);
+            }
+
+            UserDB service = new UserDB();
+
+            user = service.GetUserAccount((int)id)!;
+
+            ResponseAPI<User> response = new ResponseAPI<User>();
+
+            response.Message = "Success";
+            response.Data = user;
+
+            return Results.Json(response, statusCode: 200);
+        }
         public async Task<IResult> InsertUser(HttpContext context)
         {
             User? user;
@@ -88,7 +113,7 @@ namespace HyperBean.Helpers.UserHelpers
             {
                 user = await context.Request.ReadFromJsonAsync<User>();
 
-                if (user is null)
+                if (user is null || user.ID is null)
                 {
                     Console.WriteLine("[DEBUG] data is null");
                     response.Message = "Data received is null, data might be corrupted";
@@ -106,10 +131,17 @@ namespace HyperBean.Helpers.UserHelpers
 
             UserDB service = new UserDB();
 
-            User obtained_user;
+            User? obtained_user;
             try
             {
-                obtained_user = service.GetUserAccount((int)user.ID!);
+                obtained_user = service.GetUserAccount((int)user.ID);
+
+                if (obtained_user is null)
+                {
+                    Console.WriteLine("[DEBUG] user not found");
+                    response.Message = "User not found";
+                    return Results.Json(response, statusCode: 500);
+                }
             }
             catch (Exception)
             {
