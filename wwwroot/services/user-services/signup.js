@@ -2,6 +2,7 @@ import * as toastService from "./../toast.js";
 
 document.getElementById("user-signup-form").addEventListener("submit", async (e) => {
     e.preventDefault();
+    
 
     const name = document.getElementById("name").value;
     const username = document.getElementById("username").value;
@@ -24,6 +25,8 @@ document.getElementById("user-signup-form").addEventListener("submit", async (e)
             userBalance : 0,
             isActive : true
     })});
+
+    e.target.reset();
 
     const responseData = await response.json();
 

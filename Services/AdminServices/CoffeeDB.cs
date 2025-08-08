@@ -31,6 +31,33 @@ namespace HyperBean.Services
             }
         }
 
+        public double? GetCoffeePrice(int id, string size)
+        {
+            string[] validSizes = ["small", "medium", "large"];
+            if (!validSizes.Contains(size)) return null;
+            
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+                {
+                    connection.Open();
+
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = $"SELECT {size} FROM {Filename.CoffeeTable} WHERE id = @id";
+
+                        command.Parameters.AddWithValue("@id", id);
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return Convert.ToDouble(reader[$"{size}"]);
+                            }
+                        }
+                    }
+                }
+            return null;
+        }
+
         public List<Coffee> GetAvailableCoffee()
         {
             List<Coffee> coffee_list = new List<Coffee>();
@@ -322,6 +349,34 @@ namespace HyperBean.Services
                     return false;
                 }
             }
+        }
+
+        public double GetAddonTotalPrice(List<int> id_list)
+        {
+            double total_price = 0;
+            using (var connection = new SqliteConnection($"Data Source={Filename.CoffeeDB}"))
+            {
+                connection.Open();
+
+                foreach (int id in id_list)
+                {
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = $"SELECT price FROM {Filename.AddonTable} WHERE id = @id";
+                        command.Parameters.AddWithValue("@id", id);
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                total_price += Convert.ToDouble(reader["price"]);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return total_price;
         }
         
         public List<Addon> GetAvailableAddon()

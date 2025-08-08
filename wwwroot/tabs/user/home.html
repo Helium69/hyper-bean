@@ -65,7 +65,7 @@
             <p><span class="font-semibold">Username:</span> <span id="username"> Null</span></p>
             <p><span class="font-semibold">Total Balance:</span> <span class="text-green-400">₱<span id="total-balance"> Null </span></p>
             </div>
-            <button class="mt-6 bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold transition">
+            <button id="addFundsBtn" class="mt-6 bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold transition">
             Add Funds
             </button>
         </section>
@@ -75,52 +75,6 @@
             <h2 class="text-2xl font-bold mb-4 text-yellow-300">Transaction History</h2>
             <div class="flex-grow overflow-y-auto pr-2 space-y-3">
             <!-- Transaction Card -->
-            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
-                <div class="flex justify-between text-sm sm:text-base">
-                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
-                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
-                </div>
-                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
-            </div>
-
-            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
-                <div class="flex justify-between text-sm sm:text-base">
-                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
-                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
-                </div>
-                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
-            </div>
-
-            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
-                <div class="flex justify-between text-sm sm:text-base">
-                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
-                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
-                </div>
-                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
-            </div>
-
-            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
-                <div class="flex justify-between text-sm sm:text-base">
-                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
-                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
-                </div>
-                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
-            </div>
-            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
-                <div class="flex justify-between text-sm sm:text-base">
-                <p><span class="font-semibold">Amount:</span> ₱50.00</p>
-                <p><span class="font-semibold">Balance:</span> ₱120.00</p>
-                </div>
-                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-08-01</p>
-            </div>
-
-            <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
-                <div class="flex justify-between text-sm sm:text-base">
-                <p><span class="font-semibold">Amount:</span> ₱100.00</p>
-                <p><span class="font-semibold">Balance:</span> ₱70.00</p>
-                </div>
-                <p class="text-xs sm:text-sm text-gray-300 mt-1">2025-07-30</p>
-            </div>
             <div class="bg-[#5A2A1C] p-4 rounded shadow-md">
                 <div class="flex justify-between text-sm sm:text-base">
                 <p><span class="font-semibold">Amount:</span> ₱50.00</p>
@@ -149,10 +103,30 @@
         <p>&copy; 2025 HyperBean App. All rights reserved.</p>
     </footer>
 
+    <!-- Add Funds Modal -->
+    <div id="addFundsModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-[#4A2316] text-white p-6 rounded-2xl shadow-2xl w-96 border border-[#5C2A1A]">
+            <form id="add-funds-form">
+                <h2 class="text-xl font-bold mb-4">Add Funds</h2>
+                <input id="funds-amount" type="number" placeholder="Enter amount" required min="1" max="10000"
+                    class="bg-[#5C2A1A] text-white border border-[#743522] p-2 w-full rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-500" />
+                <div class="flex justify-end gap-2">
+                    <button id="cancelAddFunds" class="px-4 py-2 bg-[#5C2A1A] hover:bg-[#743522] rounded">Cancel</button>
+                    <button class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 text-white rounded">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
     <div id="toast-container" class="fixed top-4 right-4 z-50 space-y-2"></div>
 
     <!-- Sidebar Toggle Script -->
     <script src="../../services/sidebar.js"></script>
-    <script type="module" src="../../services/user-services/home-service.js"></script>
+    <script type="module" src="../../services/user-services/home-service.js"> </script>
 </body>
 </html>

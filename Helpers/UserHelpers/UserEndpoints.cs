@@ -1,13 +1,16 @@
 using HyperBean.Models;
+using HyperBean.Services;
 using HyperBean.Services.UserServices;
 
 namespace HyperBean.Helpers.UserHelpers
 {
     class UserEndpoints
     {
+        record Payment(double payment);
+
         public IResult GetCurrentUser(HttpContext context)
         {
-            
+
             User user;
 
             int? id = context.Session.GetInt32("UserID");
@@ -30,6 +33,166 @@ namespace HyperBean.Helpers.UserHelpers
 
             return Results.Json(response, statusCode: 200);
         }
+
+        public async Task<IResult> AddFunds(HttpContext context)
+        {
+            Payment? payment; // payment
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                payment = await context.Request.ReadFromJsonAsync<Payment>();
+
+                if (payment is null)
+                {
+                    Console.WriteLine("[DEBUG] payment null");
+                    response.Message = "Data is null, data might be corrupted";
+                    return Results.Json(response, statusCode: 400);
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("[DEBUG] deserialization failed");
+                response.Message = "Data serialization failed, data might be corrupted";
+                return Results.Json(response, statusCode: 400);
+            }
+
+            if (payment.payment < 1)
+            {
+                Console.WriteLine("[DEBUG] invalid payment");
+                response.Message = "Invalid User Input";
+                return Results.Json(response, statusCode: 422);
+            }
+
+            UserDB service = new UserDB();
+            int? userID = context.Session.GetInt32("UserID"); // id
+
+            if (userID is null)
+            {
+                Console.WriteLine("[DEBUG] unauthorized");
+                return Results.Json(response, statusCode: 401);
+            }
+
+            User? currentUser = service.GetUserAccount((int)userID); // user
+
+            if (currentUser is null)
+            {
+                Console.WriteLine("[DEBUG] no user found");
+                response.Message = "No user account was found";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            double newBalance = payment.payment + (double)currentUser.UserBalance!;
+
+            if (newBalance > 10000)
+            {
+                Console.WriteLine("+ limit");
+                response.Message = "Adding funds exceed the ₱10000 limit";
+                return Results.Json(response, statusCode: 422);
+            }
+
+            service.UpdateFunds((int)userID, newBalance);
+
+            Console.WriteLine("[DEBUG] success");
+            
+            response.Message = "Success";
+            return Results.Json(response, statusCode: 200);
+        }
+
+        public async Task<IResult> BuyCoffee(HttpContext context)
+        {
+            Order? order; // Order
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            try
+            {
+                order = await context.Request.ReadFromJsonAsync<Order>();
+
+                if (order is null || !order.IsValuesValid)
+                {
+                    response.Message = "Null detected in required data field\'s, data might be corrupted";
+                    return Results.Json(response, statusCode: 400);
+                }
+            }
+            catch (Exception)
+            {
+                response.Message = "Data serialization failed, data might be corrupted";
+                return Results.Json(response, statusCode: 400);
+            }
+
+            if (order.Quantity < 1)
+            {
+                response.Message = "Invalid quantity detected";
+                return Results.Json(response, statusCode: 422);
+            }
+
+            if (order.Quantity > 5)
+            {
+                response.Message = "Maximum quantity reached";
+                return Results.Json(response, statusCode: 422);
+            }
+
+            int? userID = context.Session.GetInt32("UserID");
+
+            if (userID is null)
+            {
+                response.Message = "Unauthorized access detected";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            UserDB service = new UserDB();
+
+            User? user = service.GetUserAccount((int)userID); // user
+
+            if (user is null)
+            {
+                response.Message = "Does not exist";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            CoffeeDB productService = new CoffeeDB();
+
+            double coffeePrice = (double)productService.GetCoffeePrice((int)order.CoffeeID!, order.CoffeeSize!)!;
+
+
+            if (order.AddonsID is not null)
+            {
+                double addonTotalPrice = productService.GetAddonTotalPrice(order.AddonsID);
+
+                double totalPrice = (coffeePrice + addonTotalPrice) * Convert.ToDouble(order.Quantity);
+
+                double newUserBalance = (double)user.UserBalance! - totalPrice;
+
+                if (newUserBalance < -10000)
+                {
+                    response.Message = "Maximum debt should not reach ₱-10000";
+                    return Results.Json(response, statusCode: 422);
+                }
+
+                service.UpdateFunds((int)userID, newUserBalance);
+
+                response.Message = "Order Purchased!";
+                return Results.Json(response, statusCode: 200);
+            }
+
+            double userBalance = (double)user.UserBalance! - (coffeePrice * Convert.ToDouble(order.Quantity));
+
+
+            if (userBalance < -10000)
+            {
+                response.Message = "Maximum debt should not reach ₱-10000";
+                return Results.Json(response, statusCode: 422);
+            }
+
+            service.UpdateFunds((int)userID, userBalance);
+
+            response.Message = "Order Purchased!";
+            return Results.Json(response, statusCode: 200);
+
+        }
+
+        
+        
         public async Task<IResult> InsertUser(HttpContext context)
         {
             User? user;
@@ -168,7 +331,7 @@ namespace HyperBean.Helpers.UserHelpers
         public IResult ValidateUserSession(HttpContext context)
         {
             ResponseAPI<string> response = new ResponseAPI<string>();
-            
+
             if (context.Session.GetInt32("UserID") is null)
             {
                 Console.WriteLine("[DEBUG] unauthorized");

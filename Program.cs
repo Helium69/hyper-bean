@@ -129,5 +129,16 @@ app.MapGet("/user/get-available-addon", (HttpContext context) =>
     return service.GetAvailableAddOn();
 });
 
+app.MapPost("/user/add-funds", async (HttpContext context) =>
+{
+    UserEndpoints service = new UserEndpoints();
+    return await service.AddFunds(context);
+});
+
+app.MapPost("/user/buy-coffee", async (HttpContext context) => {
+    UserEndpoints service = new UserEndpoints();
+    return await service.BuyCoffee(context);
+});
+
 
 app.Run();

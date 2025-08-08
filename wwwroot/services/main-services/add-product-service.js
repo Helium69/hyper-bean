@@ -2,7 +2,7 @@ import * as toastService from "./../toast.js";
 
 document.getElementById("coffee-form").addEventListener("submit", async (e) => {
     e.preventDefault();
-
+    
     const name = document.getElementById("coffee-name").value;
     const url = document.getElementById("coffee-url").value;
     const small = parseFloat(document.getElementById("coffee-small").value);
@@ -23,6 +23,8 @@ document.getElementById("coffee-form").addEventListener("submit", async (e) => {
             isAvailable : isAvailable
     })});
 
+    e.target.reset();
+
     const result = await response.json();
 
     if (response.status === 422){
@@ -42,7 +44,7 @@ document.getElementById("coffee-form").addEventListener("submit", async (e) => {
 
 document.getElementById("addon-form").addEventListener("submit", async (e) => {
     e.preventDefault();
-
+    
     const name = document.getElementById("addon-name").value;
     const url = document.getElementById("addon-url").value;
     const price = parseFloat(document.getElementById("addon-price").value);
@@ -58,6 +60,8 @@ document.getElementById("addon-form").addEventListener("submit", async (e) => {
             price : price,
             isAvailable : isAvailable
     })});
+
+    e.target.reset();
 
     const result = await response.json();
 
@@ -75,18 +79,6 @@ document.getElementById("addon-form").addEventListener("submit", async (e) => {
 
     toastService.showToast("error", result.message);
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // coffee navigation

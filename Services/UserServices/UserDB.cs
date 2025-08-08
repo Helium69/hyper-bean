@@ -203,6 +203,27 @@ namespace HyperBean.Services.UserServices
             return true;
         }
 
+        public void UpdateFunds(int id, double newBalance)
+        {
+            using (var connection = new SqliteConnection($"Data Source={Filename.UserDB}"))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = $@"
+                        UPDATE {Filename.UserTable}
+                        SET user_balance = @user_balance
+                        WHERE id = @id;
+                    ";
+
+                    command.Parameters.AddWithValue("@user_balance", newBalance);
+                    command.Parameters.AddWithValue("@id", id);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
         public User? GetUserAccount(int id)
         {
             InitiateDB();
