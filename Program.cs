@@ -135,9 +135,22 @@ app.MapPost("/user/add-funds", async (HttpContext context) =>
     return await service.AddFunds(context);
 });
 
-app.MapPost("/user/buy-coffee", async (HttpContext context) => {
+app.MapPost("/user/buy-coffee", async (HttpContext context) =>
+{
     UserEndpoints service = new UserEndpoints();
     return await service.BuyCoffee(context);
+});
+
+app.MapGet("/user/get-transaction", (HttpContext context) =>
+{
+    UserEndpoints service = new UserEndpoints();
+    return service.GetTransaction(context);
+});
+
+app.MapGet("/user/logout", (HttpContext context) =>
+{
+    UserEndpoints service = new UserEndpoints();
+    return service.Logout(context);
 });
 
 

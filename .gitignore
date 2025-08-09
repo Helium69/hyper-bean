@@ -1,1 +1,8 @@
 tailwindcss.exe
+
+*.db
+
+appsettings*.json
+
+bin/
+obj/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Home</title>
+    <title>About</title>
     <link href="../../styles/output.css" rel="stylesheet" />
     <style>
         html, body {
@@ -20,7 +20,7 @@
     <!-- Header -->
     <header class="bg-[#3A170C] shadow-md py-4 px-6 sticky top-0 z-40">
         <div class="relative flex items-center justify-center">
-        <h1 class="absolute left-0 text-xl sm:text-2xl font-bold text-white">Coffee App</h1>
+        <h1 class="absolute left-0 text-xl sm:text-2xl font-bold text-white">HyperBean</h1>
         <span class="text-lg sm:text-xl font-bold text-yellow-300">Home</span>
         </div>
     </header>
@@ -45,7 +45,7 @@
             <a href="about.html" class="block px-4 py-2 rounded bg-[#3E1A0F] border-l-4 border-yellow-400 font-semibold shadow-md">
             ℹ️ <span class="inline-block ml-2 hidden">About Us</span>
             </a>
-            <a href="#" class="block px-4 py-2 rounded bg-[#8B1E1E] hover:bg-red-700 transition font-semibold">
+            <a href="#" class="logout block px-4 py-2 rounded bg-[#8B1E1E] hover:bg-red-700 transition font-semibold">
             🚪 <span class="inline-block ml-2 hidden">Logout</span>
             </a>
         </nav>
@@ -53,13 +53,22 @@
 
         <!-- Main Section -->
         <main class="flex-grow p-6 flex flex-col sm:flex-row gap-6 overflow-hidden">
-
+            <section class="bg-[#3E1A0F] rounded-2xl p-6 shadow-lg h-full flex flex-col">
+                <h2 class="text-2xl font-bold mb-4">About</h2>
+                <p class="text-sm leading-relaxed">
+                    This part of my project which is the user section allows users to order coffee, 
+                    keep track of their transaction history, and add funds. 
+                    Feel free to explore this part of my work. This project is a way to showcase 
+                    my current skill in programming. I completed this during the summer after my first 
+                    year in Computer Science.
+                </p>
+            </section>
         </main>
     </div>
 
     <!-- Footer -->
     <footer class="bg-[#3A170C] text-sm text-center py-4">
-        <p>&copy; 2025 HyperBean App. All rights reserved.</p>
+        <p>2025 HyperBean App. </p>
     </footer>
 
     <div id="toast-container" class="fixed top-4 right-4 z-50 space-y-2"></div>
@@ -67,5 +76,6 @@
     <!-- Sidebar Toggle Script -->
     <script src="../../services/sidebar.js"></script>
     <script type="module" src="../../services/user-services/about-service.js"></script>
+    <script src="../../services/user-services/logout.js"></script>
 </body>
 </html>

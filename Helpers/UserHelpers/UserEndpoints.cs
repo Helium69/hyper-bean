@@ -100,6 +100,42 @@ namespace HyperBean.Helpers.UserHelpers
             return Results.Json(ok, statusCode: 200);
         }
 
+        public IResult Logout(HttpContext context)
+        {
+            context.Session.Clear();
+
+            ResponseAPI<string> response = new ResponseAPI<string>();
+
+            response.Message = "Success";
+            return Results.Json(response, statusCode: 200);
+        }
+
+        public IResult GetTransaction(HttpContext context)
+        {
+            UserDB service = new UserDB();
+
+
+            int? id = context.Session.GetInt32("UserID");
+
+            if (id is null)
+            {
+                ResponseAPI<string> response = new ResponseAPI<string>();
+                response.Message = "Unauthorized access detected";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            List<Transaction> transactions = service.GetTransactions((int)id);
+            ResponseAPI<List<Transaction>> result = new ResponseAPI<List<Transaction>>();
+
+            Console.WriteLine(transactions.Count());
+
+            result.Message = "Success";
+            result.Data = transactions;
+
+            return Results.Json(result, statusCode: 200);
+
+        }
+
         public async Task<IResult> BuyCoffee(HttpContext context)
         {
             Order? order; // Order
@@ -164,6 +200,8 @@ namespace HyperBean.Helpers.UserHelpers
 
             ResponseAPI<double> ok = new ResponseAPI<double>();
 
+            Transaction transaction = new Transaction();
+
 
             if (order.AddonsID is not null)
             {
@@ -183,6 +221,13 @@ namespace HyperBean.Helpers.UserHelpers
                 Console.WriteLine("[DEBUG] success");
 
                 service.UpdateFunds((int)userID, newUserBalance);
+
+                transaction.ID = (int)userID;
+                transaction.BalanceAmountLeft = newUserBalance;
+                transaction.TotalFee = totalPrice;
+                transaction.Date = DateOnly.FromDateTime(DateTime.Today).ToString();
+
+                service.InsertTransaction(transaction);
 
                 ok.Message = "Order Purchased!";
                 ok.Data = totalPrice;
@@ -204,7 +249,12 @@ namespace HyperBean.Helpers.UserHelpers
 
             service.UpdateFunds((int)userID, userBalance);
 
-            Console.WriteLine("[DEBUG] - success 2 ");
+            transaction.ID = (int)userID;
+            transaction.Date = DateOnly.FromDateTime(DateTime.Today).ToString();
+            transaction.BalanceAmountLeft = userBalance;
+            transaction.TotalFee = totalCoffeePrice;
+
+            service.InsertTransaction(transaction);
 
             ok.Message = "Order Purchased!";
             ok.Data = totalCoffeePrice;
@@ -388,11 +438,19 @@ namespace HyperBean.Helpers.UserHelpers
             UserDB service = new UserDB();
 
             int? user_id;
+            bool active;
 
-            if (!service.ValidateUserLogin(user_input, out user_id))
+            if (!service.ValidateUserLogin(user_input, out user_id, out active))
             {
                 Console.WriteLine("[DEBUG] login failed");
                 response.Message = "Invalid username or password";
+                return Results.Json(response, statusCode: 401);
+            }
+
+            if (!active)
+            {
+                Console.WriteLine("[DEBUG] banned");
+                response.Message = "Your account is currently frozen";
                 return Results.Json(response, statusCode: 401);
             }
 

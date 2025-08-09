@@ -94,7 +94,7 @@ namespace HyperBean.Services.UserServices
             return true;
         }
 
-        public bool ValidateUserLogin(User user_input, out int? id)
+        public bool ValidateUserLogin(User user_input, out int? id, out bool active)
         {
             InitiateDB();
             User user_account = new User();
@@ -106,7 +106,7 @@ namespace HyperBean.Services.UserServices
                 using (var command = connection.CreateCommand())
                 {
                     command.CommandText = $@"
-                        SELECT password, id FROM {Filename.UserTable}
+                        SELECT password, id, is_active FROM {Filename.UserTable}
                         WHERE username = @username
                     ";
 
@@ -117,11 +117,14 @@ namespace HyperBean.Services.UserServices
                         if (!reader.Read())
                         {
                             id = null;
+                            active = false;
                             return false;
                         }
 
                         user_account.Password = reader["password"].ToString();
                         user_account.ID = Convert.ToInt32(reader["id"]);
+                        user_account.IsActive = Convert.ToInt32(reader["is_active"]) == 1;
+                        
                     }
                 }
             }
@@ -129,10 +132,12 @@ namespace HyperBean.Services.UserServices
             if (!BCrypt.Net.BCrypt.Verify(user_input.Password, user_account.Password))
             {
                 id = null;
+                active = false;
                 return false;
             }
 
             id = user_account.ID;
+            active = (bool)user_account.IsActive;
             return true;
         }
 
@@ -267,7 +272,8 @@ namespace HyperBean.Services.UserServices
 
         public void InsertTransaction(Transaction transaction)
         {
-            using (var connection = new SqliteConnection($"Data Source={Filename.TransactionTable}"))
+            InitiateDB();
+            using (var connection = new SqliteConnection($"Data Source={Filename.UserDB}"))
             {
                 connection.Open();
 
@@ -278,7 +284,7 @@ namespace HyperBean.Services.UserServices
                         VALUES (@user_id, @total_fee, @balance_amount_left , @date);
                     ";
 
-                    command.Parameters.AddWithValue("@user_id", transaction.Date);
+                    command.Parameters.AddWithValue("@user_id", transaction.ID);
                     command.Parameters.AddWithValue("@total_fee", transaction.TotalFee);
                     command.Parameters.AddWithValue("@balance_amount_left", transaction.BalanceAmountLeft);
                     command.Parameters.AddWithValue("@date", transaction.Date);
@@ -290,8 +296,10 @@ namespace HyperBean.Services.UserServices
 
         public List<Transaction> GetTransactions(int id)
         {
+            InitiateDB();
             List<Transaction> transaction_list = new List<Transaction>();
-            using (var connection = new SqliteConnection($"Data Source={Filename.TransactionTable}"))
+
+            using (var connection = new SqliteConnection($"Data Source={Filename.UserDB}"))
             {
                 connection.Open();
 
@@ -303,7 +311,7 @@ namespace HyperBean.Services.UserServices
 
                     using (var reader = command.ExecuteReader())
                     {
-                        if (reader.Read())
+                        while (reader.Read())
                         {
                             Transaction transaction = new Transaction();
                             transaction.ID = Convert.ToInt32(reader["user_id"]);
