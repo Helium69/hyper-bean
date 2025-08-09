@@ -12,8 +12,32 @@ let selectedSizePrice = null; // numeric price
 let quantity = 1;
 
 
-document.getElementById("submit-final-order-form").addEventListener("submit", (e) => {
+document.getElementById("submit-final-order-form").addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    const response = await fetch ("/user/buy-coffee", {
+        method : "POST",
+        credentials : "include",
+        headers : {"Content-Type" : "application/json"},
+        body : JSON.stringify({
+            coffeeID : selectedCoffeeID,
+            quantity : quantity,
+            addonsID : selectedAddonsID,
+            coffeeSize : selectedSize
+        })
+    });
+
+    const responseData = await response.json();
+    
+    closeModal();
+
+    if (response.status === 200){
+        toastService.showToast("success", "Order Completed");
+        toastService.showToast("warning", `₱${responseData.data} has been deducted to your account`);
+        return;
+    }
+
+    toastService.showToast("error", responseData.message);
 
 
 })

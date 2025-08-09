@@ -1,4 +1,5 @@
 import * as validateSession from "./validate-user-login.js";
+import * as toastService from "./../toast.js";
 
 
 const addFundsModal = document.getElementById("addFundsModal");
@@ -34,11 +35,17 @@ document.getElementById("add-funds-form").addEventListener("submit", async (e) =
         body : JSON.stringify({payment : payment})
     });
 
-    const dataResponse = response.json();
+    const dataResponse = await response.json();
 
     e.target.reset();
-    
-    debugger;
+
+    if (response.status === 200){
+        toastService.showToast("success", "User Fund has been successfully updated");
+        document.getElementById("total-balance").innerText = dataResponse.data;
+        return;
+    }
+
+    toastService.showToast("error", dataResponse.message);
 });
 
 

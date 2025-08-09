@@ -93,10 +93,11 @@ namespace HyperBean.Helpers.UserHelpers
 
             service.UpdateFunds((int)userID, newBalance);
 
-            Console.WriteLine("[DEBUG] success");
+            ResponseAPI<double> ok = new ResponseAPI<double>();
+            ok.Message = "Success";
+            ok.Data = newBalance;
             
-            response.Message = "Success";
-            return Results.Json(response, statusCode: 200);
+            return Results.Json(ok, statusCode: 200);
         }
 
         public async Task<IResult> BuyCoffee(HttpContext context)
@@ -110,24 +111,29 @@ namespace HyperBean.Helpers.UserHelpers
 
                 if (order is null || !order.IsValuesValid)
                 {
+                    Console.WriteLine("[DEBUG] data null");
+
                     response.Message = "Null detected in required data field\'s, data might be corrupted";
                     return Results.Json(response, statusCode: 400);
                 }
             }
             catch (Exception)
             {
+                Console.WriteLine("[DEBUG] data deserialization failed");
                 response.Message = "Data serialization failed, data might be corrupted";
                 return Results.Json(response, statusCode: 400);
             }
 
             if (order.Quantity < 1)
             {
+                Console.WriteLine("[DEBUG] q below");
                 response.Message = "Invalid quantity detected";
                 return Results.Json(response, statusCode: 422);
             }
 
             if (order.Quantity > 5)
             {
+                Console.WriteLine("[DEBUG] q upper");
                 response.Message = "Maximum quantity reached";
                 return Results.Json(response, statusCode: 422);
             }
@@ -136,6 +142,7 @@ namespace HyperBean.Helpers.UserHelpers
 
             if (userID is null)
             {
+                Console.WriteLine("[DEBUG] unauthorized");
                 response.Message = "Unauthorized access detected";
                 return Results.Json(response, statusCode: 401);
             }
@@ -146,6 +153,7 @@ namespace HyperBean.Helpers.UserHelpers
 
             if (user is null)
             {
+                Console.WriteLine("[DEBUG] user null");
                 response.Message = "Does not exist";
                 return Results.Json(response, statusCode: 401);
             }
@@ -153,6 +161,8 @@ namespace HyperBean.Helpers.UserHelpers
             CoffeeDB productService = new CoffeeDB();
 
             double coffeePrice = (double)productService.GetCoffeePrice((int)order.CoffeeID!, order.CoffeeSize!)!;
+
+            ResponseAPI<double> ok = new ResponseAPI<double>();
 
 
             if (order.AddonsID is not null)
@@ -165,34 +175,43 @@ namespace HyperBean.Helpers.UserHelpers
 
                 if (newUserBalance < -10000)
                 {
+                    Console.WriteLine("[DEBUG] - limit");
                     response.Message = "Maximum debt should not reach ₱-10000";
                     return Results.Json(response, statusCode: 422);
                 }
 
+                Console.WriteLine("[DEBUG] success");
+
                 service.UpdateFunds((int)userID, newUserBalance);
 
-                response.Message = "Order Purchased!";
-                return Results.Json(response, statusCode: 200);
+                ok.Message = "Order Purchased!";
+                ok.Data = totalPrice;
+                return Results.Json(ok, statusCode: 200);
             }
 
-            double userBalance = (double)user.UserBalance! - (coffeePrice * Convert.ToDouble(order.Quantity));
+            double totalCoffeePrice = coffeePrice * Convert.ToDouble(order.Quantity);
+
+            double userBalance = (double)user.UserBalance! - totalCoffeePrice;
+
 
 
             if (userBalance < -10000)
             {
+                Console.WriteLine("[DEBUG] - limit 2");
                 response.Message = "Maximum debt should not reach ₱-10000";
                 return Results.Json(response, statusCode: 422);
             }
 
             service.UpdateFunds((int)userID, userBalance);
 
-            response.Message = "Order Purchased!";
-            return Results.Json(response, statusCode: 200);
+            Console.WriteLine("[DEBUG] - success 2 ");
+
+            ok.Message = "Order Purchased!";
+            ok.Data = totalCoffeePrice;
+            return Results.Json(ok, statusCode: 200);
 
         }
 
-        
-        
         public async Task<IResult> InsertUser(HttpContext context)
         {
             User? user;
